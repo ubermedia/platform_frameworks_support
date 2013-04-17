@@ -88,12 +88,28 @@ public class MotionEventCompat {
         }
         @Override
         public float getX(MotionEvent event, int pointerIndex) {
-            return MotionEventCompatEclair.getX(event, pointerIndex);
-        }
+			try {
+				return MotionEventCompatEclair.getX(event, pointerIndex);
+			} catch (IllegalArgumentException e) {
+				if (e.getMessage().contains("pointerIndex out of range")) {
+					throw new IllegalArgumentException("bad pointerIndex:"+pointerIndex, e);
+				} else {
+					throw e;
+				}
+			}
+		}
         @Override
         public float getY(MotionEvent event, int pointerIndex) {
-            return MotionEventCompatEclair.getY(event, pointerIndex);
-        }
+			try {
+				return MotionEventCompatEclair.getY(event, pointerIndex);
+			} catch (IllegalArgumentException e) {
+				if (e.getMessage().contains("pointerIndex out of range")) {
+					throw new IllegalArgumentException("bad pointerIndex:"+pointerIndex, e);
+				} else {
+					throw e;
+				}
+			}
+		}
         @Override
         public int getPointerCount(MotionEvent event) {
             return MotionEventCompatEclair.getPointerCount(event);
