@@ -28,6 +28,7 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.SystemClock;
+import android.support.v4.BuildConfig;
 import android.support.v4.os.ParcelableCompat;
 import android.support.v4.os.ParcelableCompatCreatorCallbacks;
 import android.support.v4.view.accessibility.AccessibilityEventCompat;
@@ -83,7 +84,7 @@ import java.util.Comparator;
  */
 public class ViewPager extends ViewGroup {
     private static final String TAG = "ViewPager";
-    private static final boolean DEBUG = false;
+    private static final boolean DEBUG = false && !BuildConfig.DEBUG;
 
     private static final boolean USE_CACHE = false;
 
