@@ -887,6 +887,12 @@ public class ViewPager extends ViewGroup {
                 ii.position = newPos;
                 needPopulate = true;
             }
+
+            float newWidthFactor = mAdapter.getPageWidth(newPos);
+            if (ii.widthFactor != newWidthFactor) {
+            	ii.widthFactor = newWidthFactor;
+                needPopulate = true;
+            }
         }
 
         if (isUpdating) {
