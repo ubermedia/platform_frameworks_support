@@ -204,7 +204,12 @@ abstract class ActionBarActivityDelegate {
         // If we have an action bar, initialize the menu with a context themed from it.
         ActionBar ab = getSupportActionBar();
         if (ab != null) {
-            context = ab.getThemedContext();
+            try {
+                context = ab.getThemedContext();
+            } catch (NullPointerException e) {
+                IllegalStateException forward = new IllegalStateException("bad theming in " + mActivity, e);
+                throw forward;
+            }
         }
         return context;
     }
