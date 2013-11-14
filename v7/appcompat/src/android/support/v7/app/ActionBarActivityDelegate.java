@@ -95,7 +95,12 @@ abstract class ActionBarActivityDelegate {
         if (mMenuInflater == null) {
             ActionBar ab = getSupportActionBar();
             if (ab != null) {
-                mMenuInflater = new SupportMenuInflater(ab.getThemedContext());
+                try {
+                    mMenuInflater = new SupportMenuInflater(ab.getThemedContext());
+                } catch (NullPointerException e) {
+                    IllegalStateException forward = new IllegalStateException("bad theming in " + mActivity, e);
+                    throw forward;
+                }
             } else {
                 mMenuInflater = new SupportMenuInflater(mActivity);
             }
