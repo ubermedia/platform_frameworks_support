@@ -1962,8 +1962,8 @@ public class ViewPager extends ViewGroup {
                 mScroller.abortAnimation();
                 mPopulatePending = false;
                 populate();
-                mIsBeingDragged = true;
-                setScrollState(SCROLL_STATE_DRAGGING);
+                //mIsBeingDragged = true;
+                //setScrollState(SCROLL_STATE_DRAGGING);
 
                 // Remember where the motion event started
                 mLastMotionX = mInitialMotionX = ev.getX();
@@ -1988,11 +1988,12 @@ public class ViewPager extends ViewGroup {
                             mLastMotionY = y;
                             setScrollState(SCROLL_STATE_DRAGGING);
                             setScrollingCacheEnabled(true);
-                        }
-                        // Disallow Parent Intercept, just in case
-                        ViewParent parent = getParent();
-                        if (parent != null) {
-                            parent.requestDisallowInterceptTouchEvent(true);
+
+                            // Disallow Parent Intercept, just in case
+                            ViewParent parent = getParent();
+                            if (parent != null) {
+                                parent.requestDisallowInterceptTouchEvent(true);
+                            }
                         }
                     }
                 }
