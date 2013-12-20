@@ -1964,6 +1964,8 @@ public class ViewPager extends ViewGroup {
                 mScroller.abortAnimation();
                 mPopulatePending = false;
                 populate();
+                mIsBeingDragged = true;
+                setScrollState(SCROLL_STATE_DRAGGING);
 
                 // Remember where the motion event started
                 mLastMotionX = mInitialMotionX = ev.getX();
@@ -1983,6 +1985,7 @@ public class ViewPager extends ViewGroup {
                         if (xDiff > mTouchSlop && xDiff > yDiff) {
                             if (DEBUG) Log.v(TAG, "Starting drag!");
                             mIsBeingDragged = true;
+                            requestParentDisallowInterceptTouchEvent(true);
                             mLastMotionX = x - mInitialMotionX > 0 ? mInitialMotionX + mTouchSlop :
                             mInitialMotionX - mTouchSlop;
                             mLastMotionY = y;
@@ -1994,7 +1997,7 @@ public class ViewPager extends ViewGroup {
                             if (parent != null) {
                                 parent.requestDisallowInterceptTouchEvent(true);
                             }
-                        }
+                    	}
                     }
                 }
                 // Not else! Note that mIsBeingDragged can be set above.
