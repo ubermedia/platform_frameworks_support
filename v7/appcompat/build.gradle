@@ -4,7 +4,7 @@ archivesBaseName = 'appcompat-v7'
 
 dependencies {
     //compile fileTree(dir: 'libs', include: '*.jar')
-    compile project(':android-support:v4')
+    compile project(':Android-Support:v4')
 }
 
 android {
@@ -12,12 +12,17 @@ android {
     buildToolsVersion '19.0.2'
 
     sourceSets {
-        main.manifest.srcFile 'AndroidManifest.xml'
-        main.java.srcDir 'src'
-        main.res.srcDir 'res'
-        main.assets.srcDir 'assets'
-        main.resources.srcDir 'src'
-        instrumentTest.java.srcDir 'tests/src'
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+	instrumentTest.java.srcDir 'tests/src'
 
         // this moves src/instrumentTest to tests so all folders follow:
         // tests/java, tests/res, tests/assets, ...
