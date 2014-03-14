@@ -376,16 +376,19 @@ final class BackStackRecord extends FragmentTransaction implements
     }
 
     public FragmentTransaction add(Fragment fragment, String tag) {
+        if (null==fragment) throw new NullPointerException();
         doAddOp(0, fragment, tag, OP_ADD);
         return this;
     }
 
     public FragmentTransaction add(int containerViewId, Fragment fragment) {
+        if (null==fragment) throw new NullPointerException();
         doAddOp(containerViewId, fragment, null, OP_ADD);
         return this;
     }
 
     public FragmentTransaction add(int containerViewId, Fragment fragment, String tag) {
+        if (null==fragment) throw new NullPointerException();
         doAddOp(containerViewId, fragment, tag, OP_ADD);
         return this;
     }
@@ -431,6 +434,7 @@ final class BackStackRecord extends FragmentTransaction implements
     }
 
     public FragmentTransaction remove(Fragment fragment) {
+        if (null==fragment) throw new NullPointerException();
         Op op = new Op();
         op.cmd = OP_REMOVE;
         op.fragment = fragment;
@@ -440,6 +444,7 @@ final class BackStackRecord extends FragmentTransaction implements
     }
 
     public FragmentTransaction hide(Fragment fragment) {
+        if (null==fragment) throw new NullPointerException();
         Op op = new Op();
         op.cmd = OP_HIDE;
         op.fragment = fragment;
@@ -449,6 +454,7 @@ final class BackStackRecord extends FragmentTransaction implements
     }
 
     public FragmentTransaction show(Fragment fragment) {
+        if (null==fragment) throw new NullPointerException();
         Op op = new Op();
         op.cmd = OP_SHOW;
         op.fragment = fragment;
@@ -458,6 +464,7 @@ final class BackStackRecord extends FragmentTransaction implements
     }
 
     public FragmentTransaction detach(Fragment fragment) {
+        if (null==fragment) throw new NullPointerException();
         Op op = new Op();
         op.cmd = OP_DETACH;
         op.fragment = fragment;
@@ -467,6 +474,7 @@ final class BackStackRecord extends FragmentTransaction implements
     }
 
     public FragmentTransaction attach(Fragment fragment) {
+        if (null==fragment) throw new NullPointerException();
         Op op = new Op();
         op.cmd = OP_ATTACH;
         op.fragment = fragment;
