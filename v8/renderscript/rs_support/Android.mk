@@ -38,12 +38,15 @@ LOCAL_CLANG := true
 LOCAL_MODULE := libRSSupport
 LOCAL_SDK_VERSION := 8
 
+# TODO: remove this once we have 64-bit NDK libraries.
+LOCAL_32_BIT_ONLY := true
+
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-intermediates:= $(local-intermediates-dir)
+generated_sources_dir := $(call local-generated-sources-dir)
 
 # Generate custom headers
 
-GEN := $(addprefix $(intermediates)/, \
+GEN := $(addprefix $(generated_sources_dir)/, \
             rsgApiStructs.h \
             rsgApiFuncDecl.h \
         )
@@ -51,7 +54,7 @@ GEN := $(addprefix $(intermediates)/, \
 $(GEN) : PRIVATE_PATH := $(LOCAL_PATH)
 $(GEN) : PRIVATE_CUSTOM_TOOL = $(RSG_GENERATOR_SUPPORT) $< $@ <$(PRIVATE_PATH)/rs.spec
 $(GEN) : $(RSG_GENERATOR_SUPPORT) $(LOCAL_PATH)/rs.spec
-$(GEN): $(intermediates)/%.h : $(LOCAL_PATH)/%.h.rsg
+$(GEN): $(generated_sources_dir)/%.h : $(LOCAL_PATH)/%.h.rsg
 	$(transform-generated-source)
 
 # used in jni/Android.mk
@@ -60,7 +63,7 @@ LOCAL_GENERATED_SOURCES += $(GEN)
 
 # Generate custom source files
 
-GEN := $(addprefix $(intermediates)/, \
+GEN := $(addprefix $(generated_sources_dir)/, \
             rsgApi.cpp \
             rsgApiReplay.cpp \
         )
@@ -68,7 +71,7 @@ GEN := $(addprefix $(intermediates)/, \
 $(GEN) : PRIVATE_PATH := $(LOCAL_PATH)
 $(GEN) : PRIVATE_CUSTOM_TOOL = $(RSG_GENERATOR_SUPPORT) $< $@ <$(PRIVATE_PATH)/rs.spec
 $(GEN) : $(RSG_GENERATOR_SUPPORT) $(LOCAL_PATH)/rs.spec
-$(GEN): $(intermediates)/%.cpp : $(LOCAL_PATH)/%.cpp.rsg
+$(GEN): $(generated_sources_dir)/%.cpp : $(LOCAL_PATH)/%.cpp.rsg
 	$(transform-generated-source)
 
 # used in jni/Android.mk
@@ -125,17 +128,19 @@ LOCAL_SRC_FILES:= \
 	cpu_ref/rsCpuRuntimeMathFuncs.cpp
 
 ifeq ($(ARCH_ARM_HAVE_ARMV7A),true)
-LOCAL_CFLAGS += -DARCH_ARM_HAVE_VFP
-LOCAL_ASFLAGS := -mfpu=neon
-LOCAL_SRC_FILES += \
+LOCAL_CFLAGS_arm := -DARCH_ARM_HAVE_VFP
+LOCAL_ASFLAGS_arm := -mfpu=neon
+LOCAL_SRC_FILES_arm := \
 	cpu_ref/rsCpuIntrinsics_neon.S \
-	cpu_ref/rsCpuIntrinsics_neon_ColorMatrix.S
+	cpu_ref/rsCpuIntrinsics_neon_ColorMatrix.S \
+        cpu_ref/rsCpuIntrinsics_neon_Blend.S \
+        cpu_ref/rsCpuIntrinsics_neon_Blur.S \
+        cpu_ref/rsCpuIntrinsics_neon_YuvToRGB.S
 endif
 
 LOCAL_LDFLAGS += -llog -ldl
 LOCAL_NDK_STL_VARIANT := stlport_static
 
-LOCAL_C_INCLUDES += external/clang/lib/Headers
 LOCAL_C_INCLUDES += frameworks/compile/libbcc/include
 
 
