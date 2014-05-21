@@ -124,6 +124,7 @@ LOCAL_SRC_FILES:= \
 	cpu_ref/rsCpuIntrinsicConvolve5x5.cpp \
 	cpu_ref/rsCpuIntrinsicHistogram.cpp \
 	cpu_ref/rsCpuIntrinsicLUT.cpp \
+	cpu_ref/rsCpuIntrinsicResize.cpp \
 	cpu_ref/rsCpuIntrinsicYuvToRGB.cpp \
 	cpu_ref/rsCpuRuntimeMathFuncs.cpp
 
@@ -131,11 +132,11 @@ ifeq ($(ARCH_ARM_HAVE_ARMV7A),true)
 LOCAL_CFLAGS_arm := -DARCH_ARM_HAVE_VFP
 LOCAL_ASFLAGS_arm := -mfpu=neon
 LOCAL_SRC_FILES_arm := \
-	cpu_ref/rsCpuIntrinsics_neon.S \
         cpu_ref/rsCpuIntrinsics_neon_3DLUT.S \
 	cpu_ref/rsCpuIntrinsics_neon_ColorMatrix.S \
         cpu_ref/rsCpuIntrinsics_neon_Blend.S \
         cpu_ref/rsCpuIntrinsics_neon_Blur.S \
+	cpu_ref/rsCpuIntrinsics_neon_Convolve.S \
         cpu_ref/rsCpuIntrinsics_neon_YuvToRGB.S
 endif
 
@@ -147,7 +148,6 @@ LOCAL_C_INCLUDES += frameworks/compile/libbcc/include
 
 LOCAL_CFLAGS += $(rs_base_CFLAGS)
 
-LOCAL_LDLIBS := -lpthread -ldl -lm
 LOCAL_MODULE:= libRSSupport
 LOCAL_MODULE_TAGS := optional
 
