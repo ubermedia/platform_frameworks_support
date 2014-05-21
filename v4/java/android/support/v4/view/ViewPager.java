@@ -1860,6 +1860,7 @@ public class ViewPager extends ViewGroup {
                 if (xDiff > mTouchSlop && xDiff * 0.5f > yDiff) {
                     if (DEBUG) Log.v(TAG, "Starting drag!");
                     mIsBeingDragged = true;
+                    requestParentDisallowInterceptTouchEvent(true);
                     setScrollState(SCROLL_STATE_DRAGGING);
                     mLastMotionX = dx > 0 ? mInitialMotionX + mTouchSlop :
                             mInitialMotionX - mTouchSlop;
@@ -1900,6 +1901,7 @@ public class ViewPager extends ViewGroup {
                     mPopulatePending = false;
                     populate();
                     mIsBeingDragged = true;
+                    requestParentDisallowInterceptTouchEvent(true);
                     setScrollState(SCROLL_STATE_DRAGGING);
                 } else {
                     completeScroll(false);
@@ -1983,6 +1985,7 @@ public class ViewPager extends ViewGroup {
                         if (xDiff > mTouchSlop && xDiff > yDiff) {
                             if (DEBUG) Log.v(TAG, "Starting drag!");
                             mIsBeingDragged = true;
+                            requestParentDisallowInterceptTouchEvent(true);
                             mLastMotionX = x - mInitialMotionX > 0 ? mInitialMotionX + mTouchSlop :
                             mInitialMotionX - mTouchSlop;
                             mLastMotionY = y;
@@ -2063,6 +2066,13 @@ public class ViewPager extends ViewGroup {
             ViewCompat.postInvalidateOnAnimation(this);
         }
         return true;
+    }
+
+    private void requestParentDisallowInterceptTouchEvent(boolean disallowIntercept) {
+        final ViewParent parent = getParent();
+        if (parent != null) {
+            parent.requestDisallowInterceptTouchEvent(disallowIntercept);
+        }
     }
 
     private boolean performDrag(float x) {
