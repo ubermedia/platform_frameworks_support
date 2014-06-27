@@ -1,35 +1,8 @@
-/Test/PlumeUnitTest/bin/*
-/Test/PlumeUnitTest/gen/*
-/HockeySDK-Android/gen/*
-/ViewPagerIndicator/bin/*
-/ViewPagerIndicator/gen/*
-/Social API/bin/*
-/Social API/gen/*
-/PullToRefresh/bin/*
-/PullToRefresh/gen/*
-/LevelUp Misc/.settings
-/LevelUp Misc/bin/*
-/LevelUp Misc/gen/*
-/Plume/.settings/org.eclipse.ltk.core.refactoring.prefs
-/Plume/gen
-/Plume/bin
-/Plume/proguard
-/Plume Premium/bin
-/Plume Premium/gen
 local.properties
 Thumbs.db
-/google-play-services_lib/.project
-gradle-app.setting
 /builds
-/Plume/res/values/com_crashlytics_export_strings.xml
+.gradle
 *.iml
-LevelUp Misc/build/*
-PhotoView/build/*
-Plume/build/*
-PullToRefresh/build/*
-ViewPagerIndicator/build/*
-android-switch-backport/build/*
-google-play-services_lib/build/*
 .idea
 .idea/libraries/
 .idea/misc.xml
