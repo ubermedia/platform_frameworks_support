@@ -13,5 +13,6 @@ buildscript {
 }
 
 FileCollection getAndroidPrebuilt(String apiLevel) {
-    files("c:/android-sdk/platforms/android-$apiLevel/android.jar")
+    files("$System.env.ANDROID_HOME/platforms/android-$apiLevel/android.jar")
+    //files("c:/android-sdk/platforms/android-$apiLevel/android.jar")
 }
