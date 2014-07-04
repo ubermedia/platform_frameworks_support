@@ -98,6 +98,6 @@ task javadocJar(type: Jar, dependsOn:javadoc) {
 // add javadoc/source jar tasks as artifacts
 artifacts {
     archives jar
-    archives sourcesJar
-    archives javadocJar
+    //archives sourcesJar
+    //archives javadocJar
 }
