@@ -1,7 +1,7 @@
 
 LOCAL_PATH:=frameworks/rs
 rs_base_CFLAGS := -Werror -Wall -Wno-unused-parameter -Wno-unused-variable \
-		  -Wno-overloaded-virtual -DRS_COMPATIBILITY_LIB
+		  -Wno-overloaded-virtual -DRS_COMPATIBILITY_LIB -std=c++11
 
 ifeq ($(ARCH_ARM_HAVE_NEON),true)
 rs_base_CFLAGS += -DARCH_ARM_HAVE_NEON
@@ -107,9 +107,11 @@ LOCAL_SRC_FILES:= \
 	driver/rsdAllocation.cpp \
 	driver/rsdBcc.cpp \
 	driver/rsdCore.cpp \
+	driver/rsdElement.cpp \
 	driver/rsdRuntimeStubs.cpp \
 	driver/rsdSampler.cpp \
 	driver/rsdScriptGroup.cpp \
+	driver/rsdType.cpp \
 	cpu_ref/rsCpuCore.cpp \
 	cpu_ref/rsCpuScript.cpp \
 	cpu_ref/rsCpuRuntimeMath.cpp \
