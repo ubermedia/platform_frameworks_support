@@ -8,12 +8,12 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.10.0'
-        classpath 'com.android.tools.build:gradle:0.13.3'
+        //classpath 'com.android.tools.build:gradle:0.10.0'
+        classpath 'com.android.tools.build:gradle:0.12.+'
     }
 }
 
-FileCollection getAndroidPrebuilt(String apiLevel) {
+/*FileCollection getAndroidPrebuilt(String apiLevel) {
     files("$System.env.ANDROID_HOME/platforms/android-$apiLevel/android.jar")
     //files("c:/android-sdk/platforms/android-$apiLevel/android.jar")
-}
+}*/
