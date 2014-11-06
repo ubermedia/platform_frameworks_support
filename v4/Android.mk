@@ -14,11 +14,21 @@
 
 LOCAL_PATH := $(call my-dir)
 
+# A helper sub-library that makes direct use of Donut APIs.
+include $(CLEAR_VARS)
+LOCAL_MODULE := android-support-v4-donut
+LOCAL_SDK_VERSION := 4
+LOCAL_SRC_FILES := $(call all-java-files-under, donut)
+include $(BUILD_STATIC_JAVA_LIBRARY)
+
+# -----------------------------------------------------------------------
+
 # A helper sub-library that makes direct use of Eclair APIs.
 include $(CLEAR_VARS)
 LOCAL_MODULE := android-support-v4-eclair
 LOCAL_SDK_VERSION := 5
 LOCAL_SRC_FILES := $(call all-java-files-under, eclair)
+LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4-donut
 include $(BUILD_STATIC_JAVA_LIBRARY)
 
 # -----------------------------------------------------------------------
@@ -63,12 +73,22 @@ include $(BUILD_STATIC_JAVA_LIBRARY)
 
 # -----------------------------------------------------------------------
 
+# A helper sub-library that makes direct use of Honeycomb MR1 APIs.
+include $(CLEAR_VARS)
+LOCAL_MODULE := android-support-v4-honeycomb-mr1
+LOCAL_SDK_VERSION := 12
+LOCAL_SRC_FILES := $(call all-java-files-under, honeycomb_mr1)
+LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4-honeycomb
+include $(BUILD_STATIC_JAVA_LIBRARY)
+
+# -----------------------------------------------------------------------
+
 # A helper sub-library that makes direct use of Honeycomb MR2 APIs.
 include $(CLEAR_VARS)
 LOCAL_MODULE := android-support-v4-honeycomb-mr2
 LOCAL_SDK_VERSION := 13
 LOCAL_SRC_FILES := $(call all-java-files-under, honeycomb_mr2)
-LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4-honeycomb
+LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4-honeycomb-mr1
 include $(BUILD_STATIC_JAVA_LIBRARY)
 
 # -----------------------------------------------------------------------
@@ -133,10 +153,35 @@ include $(BUILD_STATIC_JAVA_LIBRARY)
 
 # -----------------------------------------------------------------------
 
+# A helper sub-library that makes direct use of the upcoming API.
+include $(CLEAR_VARS)
+LOCAL_MODULE := android-support-v4-api20
+LOCAL_SDK_VERSION := 20
+LOCAL_SRC_FILES := $(call all-java-files-under, api20)
+LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4-kitkat
+include $(BUILD_STATIC_JAVA_LIBRARY)
+
+# -----------------------------------------------------------------------
+
+# A helper sub-library that makes direct use of the upcoming API.
+# TODO: Apply a real name and SDK version when available
+include $(CLEAR_VARS)
+LOCAL_MODULE := android-support-v4-api21
+LOCAL_SDK_VERSION := current
+LOCAL_SRC_FILES := $(call all-java-files-under, api21)
+LOCAL_STATIC_JAVA_LIBRARIES := android-support-v4-api20
+include $(BUILD_STATIC_JAVA_LIBRARY)
+
+# -----------------------------------------------------------------------
+
 # Here is the final static library that apps can link against.
 include $(CLEAR_VARS)
 LOCAL_MODULE := android-support-v4
 LOCAL_SDK_VERSION := 4
-LOCAL_SRC_FILES := $(call all-java-files-under, java)
-LOCAL_STATIC_JAVA_LIBRARIES += android-support-v4-kitkat
+
+LOCAL_SRC_FILES := $(call all-java-files-under, java) \
+    $(call all-Iaidl-files-under, java)
+
+LOCAL_STATIC_JAVA_LIBRARIES += android-support-v4-api21
+LOCAL_STATIC_JAVA_LIBRARIES += android-support-annotations
 include $(BUILD_STATIC_JAVA_LIBRARY)

@@ -32,7 +32,7 @@ dependencies {
     jellybeanmr1Compile getAndroidPrebuilt('17')
     jellybeanmr1Compile sourceSets.jellybean.output
 
-    jellybeanmr2Compile getAndroidPrebuilt('18')
+    jellybeanmr2Compile getAndroidPrebuilt('current')
     jellybeanmr2Compile sourceSets.jellybean.output
     jellybeanmr2Compile sourceSets.jellybeanmr1.output
 
@@ -40,8 +40,7 @@ dependencies {
 }
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion '19.1'
+    compileSdkVersion 'current'
 
     sourceSets {
         main.manifest.srcFile 'AndroidManifest.xml'

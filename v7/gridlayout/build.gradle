@@ -6,10 +6,8 @@ dependencies {
     compile project(':support-v4')
 }
 
-
 android {
-    compileSdkVersion 21
-    buildToolsVersion '19.1'
+    compileSdkVersion 'current'
 
     sourceSets {
         main.manifest.srcFile 'AndroidManifest.xml'

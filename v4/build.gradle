@@ -1,27 +1,35 @@
-apply plugin: 'java'
-
+apply plugin: 'android-library'
 archivesBaseName = 'android-support-v4'
+
+// create a jar task for the code internal implementation
+tasks.create(name: "internalJar", type: Jar) {
+    baseName "internal_impl"
+}
 
 // --------------------------
 // TO ADD NEW PLATFORM SPECIFIC CODE, UPDATE THIS:
 // create and configure the sourcesets/dependencies for platform-specific code.
 // values are: sourceset name, source folder name, api level, previous sourceset.
-def eclairSS       = createApiSourceset('eclair',       'eclair',        '5',       null)
+
+ext.allSS = []
+
+def baseSS         = createApiSourceset('donut',         'donut',          '4',       null)
+def eclairSS       = createApiSourceset('eclair',       'eclair',        '5',       baseSS)
 def eclairMr1SS    = createApiSourceset('eclairmr1',    'eclair-mr1',    '7',       eclairSS)
 def froyoSS        = createApiSourceset('froyo',        'froyo',         '8',       eclairMr1SS)
 def gingerbreadSS  = createApiSourceset('gingerbread',  'gingerbread',   '10',       froyoSS)
 def honeycombSS    = createApiSourceset('honeycomb',    'honeycomb',     '11',      gingerbreadSS)
-def honeycombMr2SS = createApiSourceset('honeycombmr2', 'honeycomb_mr2', '13',      honeycombSS)
+def honeycombMr1SS = createApiSourceset('honeycombmr1', 'honeycomb_mr1', '12',      honeycombSS)
+def honeycombMr2SS = createApiSourceset('honeycombmr2', 'honeycomb_mr2', '13',      honeycombMr1SS)
 def icsSS          = createApiSourceset('ics',          'ics',           '14',      honeycombMr2SS)
 def icsMr1SS       = createApiSourceset('icsmr1',       'ics-mr1',       '15',      icsSS)
 def jbSS           = createApiSourceset('jellybean',    'jellybean',     '16',      icsMr1SS)
 def jbMr1SS        = createApiSourceset('jellybeanmr1', 'jellybean-mr1', '17',      jbSS)
 def jbMr2SS        = createApiSourceset('jellybeanmr2', 'jellybean-mr2', '18',      jbMr1SS)
 def kitkatSS       = createApiSourceset('kitkat',       'kitkat',        '19',      jbMr2SS)
+def api20SS        = createApiSourceset('api20',        'api20',         'current', kitkatSS)
+def api21SS        = createApiSourceset('api21',        'api21',         'current', api20SS)
 
-// setup the main code to depend on the above through the highest platform-specific sourceset.
-setupDependencies('compile', kitkatSS)
-// --------------------------
 
 def createApiSourceset(String name, String folder, String apiLevel, SourceSet previousSource) {
     def sourceSet = sourceSets.create(name)
@@ -33,10 +41,9 @@ def createApiSourceset(String name, String folder, String apiLevel, SourceSet pr
     if (previousSource != null) {
         setupDependencies(configName, previousSource)
     }
+    ext.allSS.add(sourceSet)
 
-    project.jar {
-        from sourceSet.output
-    }
+    internalJar.from sourceSet.output
 
     return sourceSet
 }
@@ -46,13 +53,39 @@ def setupDependencies(String configName, SourceSet previousSourceSet) {
     project.getDependencies().add(configName, previousSourceSet.compileClasspath)
 }
 
-// the main sourceset and its dependencies
-sourceSets {
-    main.java.srcDirs = ['java']
+dependencies {
+    compile project(':support-annotations')
+
+    // add the internal implementation as a dependency.
+    // this is not enough to make the regular compileJava task
+    // depend on the generation of this jar. This is done below
+    // when manipulating the libraryVariants.
+    compile files(internalJar.archivePath)
 }
 
-dependencies {
-    compile getAndroidPrebuilt('4')
+android {
+    compileSdkVersion 4
+    buildToolsVersion "19.0.1"
+
+    defaultConfig {
+        minSdkVersion 4
+        // TODO: get target from branch
+        //targetSdkVersion 19
+    }
+
+    sourceSets {
+        main.manifest.srcFile 'AndroidManifest.xml'
+        main.java.srcDirs = ['java']
+        main.aidl.srcDirs = ['java']
+
+        androidTest.setRoot('tests')
+        androidTest.java.srcDir 'tests/java'
+    }
+
+    lintOptions {
+        // TODO: fix errors and reenable.
+        abortOnError false
+    }
 }
 
 // configuration for the javadoc to include all source sets.
