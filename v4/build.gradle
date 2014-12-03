@@ -104,7 +104,7 @@ android.libraryVariants.all { variant ->
         from 'LICENSE.txt'
     }
     def javadocTask = project.tasks.create(name: "javadoc${suffix}", type: Javadoc) {
-        println "android.sourceSets.main=" + android.sourceSets.main
+        //println "android.sourceSets.main=" + android.sourceSets.main
         /*source android.sourceSets.main.allJava
         classpath = files(variant.javaCompile.classpath.files) + files(
                 "${android.plugin.sdkDirectory}/platforms/${android.compileSdkVersion}/android.jar")*/
