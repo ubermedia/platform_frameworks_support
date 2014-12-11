@@ -54,7 +54,24 @@ def setupDependencies(String configName, SourceSet previousSourceSet) {
 }
 
 dependencies {
-    compile project(':support-annotations')
+    def useLocalAnnotations = false
+    def localAnnotations = ':support-annotations'
+    def artifactSupportAnnotations = 'com.android.support:support-annotations:21.+'
+
+    allprojects {
+        rootProject.allprojects.project.each {
+            if (it.path == localAnnotations) {
+                useLocalAnnotations = true
+            }
+        }
+    }
+
+    if (useLocalAnnotations) {
+        println 'Using local support-annotations library in ' + project.path
+        compile project(localAnnotations)
+    } else {
+        compile artifactSupportAnnotations
+    }
 
     // add the internal implementation as a dependency.
     // this is not enough to make the regular compileJava task
