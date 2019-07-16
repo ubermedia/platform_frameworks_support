@@ -14,26 +14,26 @@
  * limitations under the License.
  */
 
-package android.support.v7.app;
+package androidx.appcompat.app;
 
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.view.WindowCompat;
-import android.support.v7.appcompat.R;
-import android.support.v7.internal.view.menu.ListMenuPresenter;
-import android.support.v7.internal.view.menu.MenuBuilder;
-import android.support.v7.internal.view.menu.MenuPresenter;
-import android.support.v7.internal.view.menu.MenuView;
-import android.support.v7.internal.view.menu.MenuWrapperFactory;
-import android.support.v7.internal.widget.ActionBarContainer;
-import android.support.v7.internal.widget.ActionBarContextView;
-import android.support.v7.internal.widget.ActionBarView;
-import android.support.v7.internal.widget.ProgressBarICS;
-import android.support.v7.view.ActionMode;
+import androidx.legacy.app.ActionBarDrawerToggle;
+import androidx.core.view.WindowCompat;
+import androidx.appcompat.appcompat.R;
+import androidx.appcompat.internal.view.menu.ListMenuPresenter;
+import androidx.appcompat.internal.view.menu.MenuBuilder;
+import androidx.appcompat.internal.view.menu.MenuPresenter;
+import androidx.appcompat.internal.view.menu.MenuView;
+import androidx.appcompat.internal.view.menu.MenuWrapperFactory;
+import androidx.appcompat.internal.widget.ActionBarContainer;
+import androidx.appcompat.internal.widget.ActionBarContextView;
+import androidx.appcompat.internal.widget.ActionBarView;
+import androidx.appcompat.internal.widget.ProgressBarICS;
+import androidx.appcompat.view.ActionMode;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;

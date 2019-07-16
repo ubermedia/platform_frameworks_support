@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.widget;
+package androidx.appcompat.internal.widget;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -22,7 +22,7 @@ import android.database.DataSetObserver;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
-import android.support.v7.appcompat.R;
+import androidx.appcompat.appcompat.R;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;

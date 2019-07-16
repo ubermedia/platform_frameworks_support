@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.widget;
+package androidx.appcompat.internal.widget;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -24,7 +24,7 @@ import android.content.res.TypedArray;
 import android.database.DataSetObserver;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.v7.appcompat.R;
+import androidx.appcompat.appcompat.R;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
@@ -690,7 +690,7 @@ class SpinnerICS extends AbsSpinnerICS implements OnClickListener {
         }
     }
 
-    private class DropdownPopup extends android.support.v7.internal.widget.ListPopupWindow
+    private class DropdownPopup extends androidx.appcompat.internal.widget.ListPopupWindow
             implements SpinnerPopup {
         private CharSequence mHintText;
         private ListAdapter mAdapter;

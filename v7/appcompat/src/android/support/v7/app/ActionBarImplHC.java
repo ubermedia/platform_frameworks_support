@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package android.support.v7.app;
+package androidx.appcompat.app;
 
-import android.support.v7.appcompat.R;
-import android.support.v7.internal.widget.NativeActionModeAwareLayout;
+import androidx.appcompat.appcompat.R;
+import androidx.appcompat.internal.widget.NativeActionModeAwareLayout;
 import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuItem;

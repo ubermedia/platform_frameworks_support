@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.util;
+package androidx.core.util;
 
 /**
  * A copy of the current platform (currently {@link android.os.Build.VERSION_CODES#KITKAT}

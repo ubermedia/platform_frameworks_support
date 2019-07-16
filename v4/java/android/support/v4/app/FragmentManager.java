@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.app;
+package androidx.core.app;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -23,8 +23,8 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v4.util.DebugUtils;
-import android.support.v4.util.LogWriter;
+import androidx.core.util.DebugUtils;
+import androidx.core.util.LogWriter;
 import android.util.Log;
 import android.util.SparseArray;
 import android.view.animation.AccelerateInterpolator;
@@ -47,6 +47,10 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 /**
  * Static library support version of the framework's {@link android.app.FragmentManager}.

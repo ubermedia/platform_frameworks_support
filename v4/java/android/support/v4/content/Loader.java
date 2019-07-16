@@ -14,15 +14,18 @@
  * limitations under the License.
  */
 
-package android.support.v4.content;
+package androidx.core.content;
 
 import android.content.Context;
 import android.database.ContentObserver;
 import android.os.Handler;
-import android.support.v4.util.DebugUtils;
+import androidx.core.util.DebugUtils;
 
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
+
+import androidx.loader.app.LoaderManager;
+import androidx.loader.content.CursorLoader;
 
 /**
  * Static library support version of the framework's {@link android.content.Loader}.
@@ -45,7 +48,7 @@ public class Loader<D> {
      * An implementation of a ContentObserver that takes care of connecting
      * it to the Loader to have the loader re-load its data when the observer
      * is told it has changed.  You do not normally need to use this yourself;
-     * it is used for you by {@link android.support.v4.content.CursorLoader}
+     * it is used for you by {@link CursorLoader}
      * to take care of executing an update when the cursor's backing data changes.
      */
     public final class ForceLoadContentObserver extends ContentObserver {
@@ -67,7 +70,7 @@ public class Loader<D> {
     /**
      * Interface that is implemented to discover when a Loader has finished
      * loading its data.  You do not normally need to implement this yourself;
-     * it is used in the implementation of {@link android.support.v4.app.LoaderManager}
+     * it is used in the implementation of {@link LoaderManager}
      * to find out when a Loader it is managing has completed so that this can
      * be reported to its client.  This interface should only be used if a
      * Loader is not being used in conjunction with LoaderManager.

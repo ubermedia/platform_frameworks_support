@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v8.renderscript;
+package androidx.renderscript;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;

@@ -14,16 +14,19 @@
  * limitations under the License.
  */
 
-package android.support.v4.app;
+package androidx.core.app;
 
 import android.os.Parcelable;
-import android.support.v4.view.PagerAdapter;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.PagerAdapter;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Implementation of {@link android.support.v4.view.PagerAdapter} that
+ * Implementation of {@link PagerAdapter} that
  * represents each page as a {@link Fragment} that is persistently
  * kept in the fragment manager as long as the user can return to the page.
  *

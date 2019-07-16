@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package android.support.v8.renderscript;
+package androidx.renderscript;
 
 import java.lang.Exception;
 
 class ExceptionThunker {
     static RuntimeException convertException (RuntimeException e) {
         if (e instanceof android.renderscript.RSIllegalArgumentException) {
-            return new android.support.v8.renderscript.RSIllegalArgumentException(e.getMessage());
+            return new androidx.renderscript.RSIllegalArgumentException(e.getMessage());
         } else if (e instanceof android.renderscript.RSInvalidStateException) {
-            return new android.support.v8.renderscript.RSInvalidStateException(e.getMessage());
+            return new androidx.renderscript.RSInvalidStateException(e.getMessage());
         } else if (e instanceof android.renderscript.RSDriverException) {
-            return new android.support.v8.renderscript.RSDriverException(e.getMessage());
+            return new androidx.renderscript.RSDriverException(e.getMessage());
         } else if (e instanceof android.renderscript.RSRuntimeException) {
-            return new android.support.v8.renderscript.RSRuntimeException(e.getMessage());
+            return new androidx.renderscript.RSRuntimeException(e.getMessage());
         }
         return e;
     }

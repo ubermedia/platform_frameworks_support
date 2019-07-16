@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.widget;
+package androidx.core.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -29,10 +29,10 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v4.view.AccessibilityDelegateCompat;
-import android.support.v4.view.MotionEventCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
+import androidx.core.view.AccessibilityDelegateCompat;
+import androidx.core.view.MotionEventCompat;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -45,6 +45,8 @@ import android.view.accessibility.AccessibilityEvent;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+
+import androidx.drawerlayout.widget.DrawerLayout;
 
 /**
  * SlidingPaneLayout provides a horizontal, multi-pane layout for use at the top level

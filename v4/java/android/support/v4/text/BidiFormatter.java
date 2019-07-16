@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package android.support.v4.text;
+package androidx.core.text;
 
-import android.support.v4.view.ViewCompat;
+import androidx.core.view.ViewCompat;
 
 import java.util.Locale;
 
-import static android.support.v4.text.TextDirectionHeuristicsCompat.FIRSTSTRONG_LTR;
+import static androidx.core.text.TextDirectionHeuristicsCompat.FIRSTSTRONG_LTR;
 
 /**
  * Utility class for formatting text for display in a potentially opposite-directionality context
@@ -392,7 +392,7 @@ public final class BidiFormatter {
     }
 
     /**
-     * Operates like {@link #unicodeWrap(String, android.support.v4.text.TextDirectionHeuristicCompat, boolean)}, but assumes
+     * Operates like {@link #unicodeWrap(String, androidx.core.text.TextDirectionHeuristicCompat, boolean)}, but assumes
      * {@code isolate} is true.
      *
      * @param str The input string.
@@ -404,7 +404,7 @@ public final class BidiFormatter {
     }
 
     /**
-     * Operates like {@link #unicodeWrap(String, android.support.v4.text.TextDirectionHeuristicCompat, boolean)}, but uses the
+     * Operates like {@link #unicodeWrap(String, androidx.core.text.TextDirectionHeuristicCompat, boolean)}, but uses the
      * formatter's default direction estimation algorithm.
      *
      * @param str The input string.
@@ -417,7 +417,7 @@ public final class BidiFormatter {
     }
 
     /**
-     * Operates like {@link #unicodeWrap(String, android.support.v4.text.TextDirectionHeuristicCompat, boolean)}, but uses the
+     * Operates like {@link #unicodeWrap(String, androidx.core.text.TextDirectionHeuristicCompat, boolean)}, but uses the
      * formatter's default direction estimation algorithm and assumes {@code isolate} is true.
      *
      * @param str The input string.

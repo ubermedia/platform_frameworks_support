@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.widget;
+package androidx.appcompat.internal.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
-import android.support.v7.appcompat.R;
+import androidx.appcompat.appcompat.R;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.LinearLayout;

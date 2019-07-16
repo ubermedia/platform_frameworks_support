@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package android.support.v7.internal.widget;
+package androidx.appcompat.internal.widget;
 
 import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
-import android.support.v7.app.ActionBar;
-import android.support.v7.appcompat.R;
-import android.support.v7.internal.view.ActionBarPolicy;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.appcompat.R;
+import androidx.appcompat.internal.view.ActionBarPolicy;
 import android.text.TextUtils.TruncateAt;
 import android.util.AttributeSet;
 import android.view.Gravity;

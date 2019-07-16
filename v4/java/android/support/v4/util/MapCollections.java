@@ -14,13 +14,15 @@
  * limitations under the License.
  */
 
-package android.support.v4.util;
+package androidx.core.util;
 
 import java.lang.reflect.Array;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+
+import androidx.collection.ArrayMap;
 
 /**
  * Helper for writing standard Java collection interfaces to a data

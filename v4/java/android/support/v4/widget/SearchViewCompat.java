@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.widget;
+package androidx.core.widget;
 
 import android.app.SearchManager;
 import android.content.ComponentName;

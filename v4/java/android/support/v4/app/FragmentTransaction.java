@@ -14,7 +14,10 @@
  * limitations under the License.
  */
 
-package android.support.v4.app;
+package androidx.core.app;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 /**
  * Static library support version of the framework's {@link android.app.FragmentTransaction}.

@@ -14,11 +14,13 @@
  * limitations under the License.
  */
 
-package android.support.v4.util;
+package androidx.core.util;
 
 import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
+
+import androidx.collection.SimpleArrayMap;
 
 /**
  * ArrayMap is a generic key->value mapping data structure that is

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.app;
+package androidx.appcompat.app;
 
 import android.content.Context;
 import android.content.pm.ActivityInfo;
@@ -23,11 +23,11 @@ import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.app.NavUtils;
-import android.support.v7.appcompat.R;
-import android.support.v7.internal.view.SupportMenuInflater;
-import android.support.v7.view.ActionMode;
+import androidx.legacy.app.ActionBarDrawerToggle;
+import androidx.core.app.NavUtils;
+import androidx.appcompat.appcompat.R;
+import androidx.appcompat.internal.view.SupportMenuInflater;
+import androidx.appcompat.view.ActionMode;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;

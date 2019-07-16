@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.view.menu;
+package androidx.appcompat.internal.view.menu;
 
 import android.content.Context;
-import android.support.v7.internal.view.menu.MenuBuilder;
-import android.support.v7.internal.view.menu.MenuBuilder.ItemInvoker;
-import android.support.v7.internal.view.menu.MenuView;
+import androidx.appcompat.internal.view.menu.MenuBuilder;
+import androidx.appcompat.internal.view.menu.MenuBuilder.ItemInvoker;
+import androidx.appcompat.internal.view.menu.MenuView;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.AdapterView;

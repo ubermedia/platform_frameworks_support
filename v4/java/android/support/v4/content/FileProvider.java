@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.content;
+package androidx.core.content;
 
 import static org.xmlpull.v1.XmlPullParser.END_DOCUMENT;
 import static org.xmlpull.v1.XmlPullParser.START_TAG;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.widget;
+package androidx.appcompat.internal.widget;
 
 import android.app.Activity;
 import android.content.Context;
@@ -27,20 +27,20 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBar.OnNavigationListener;
-import android.support.v7.appcompat.R;
-import android.support.v7.view.CollapsibleActionView;
-import android.support.v7.internal.view.menu.ActionMenuItem;
-import android.support.v7.internal.view.menu.ActionMenuPresenter;
-import android.support.v7.internal.view.menu.ActionMenuView;
-import android.support.v7.internal.view.menu.MenuBuilder;
-import android.support.v7.internal.view.menu.MenuItemImpl;
-import android.support.v7.internal.view.menu.MenuPresenter;
-import android.support.v7.internal.view.menu.MenuView;
-import android.support.v7.internal.view.menu.SubMenuBuilder;
-import android.support.v4.internal.view.SupportMenu;
-import android.support.v4.internal.view.SupportMenuItem;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.ActionBar.OnNavigationListener;
+import androidx.appcompat.appcompat.R;
+import androidx.appcompat.view.CollapsibleActionView;
+import androidx.appcompat.internal.view.menu.ActionMenuItem;
+import androidx.appcompat.internal.view.menu.ActionMenuPresenter;
+import androidx.appcompat.internal.view.menu.ActionMenuView;
+import androidx.appcompat.internal.view.menu.MenuBuilder;
+import androidx.appcompat.internal.view.menu.MenuItemImpl;
+import androidx.appcompat.internal.view.menu.MenuPresenter;
+import androidx.appcompat.internal.view.menu.MenuView;
+import androidx.appcompat.internal.view.menu.SubMenuBuilder;
+import androidx.core.internal.view.SupportMenu;
+import androidx.core.internal.view.SupportMenuItem;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;

@@ -15,7 +15,7 @@
  */
 
 
-package android.support.v4.widget;
+package androidx.core.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -27,13 +27,13 @@ import android.graphics.drawable.Drawable;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.SystemClock;
-import android.support.v4.view.AccessibilityDelegateCompat;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.view.KeyEventCompat;
-import android.support.v4.view.MotionEventCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.ViewGroupCompat;
-import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
+import androidx.core.view.AccessibilityDelegateCompat;
+import androidx.core.view.GravityCompat;
+import androidx.core.view.KeyEventCompat;
+import androidx.core.view.MotionEventCompat;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.ViewGroupCompat;
+import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.KeyEvent;

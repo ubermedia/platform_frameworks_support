@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.media;
+package androidx.mediarouter.media;
 
 final class MediaRouterJellybeanMr2 {
     public static Object getDefaultRoute(Object routerObj) {

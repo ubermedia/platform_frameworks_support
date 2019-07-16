@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package android.support.v7.widget;
+package androidx.appcompat.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.ViewGroupCompat;
+import androidx.core.view.GravityCompat;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.ViewGroupCompat;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.LogPrinter;
@@ -34,7 +34,7 @@ import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.LinearLayout;
 
-import android.support.v7.gridlayout.R;
+import androidx.appcompat.gridlayout.R;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -84,7 +84,7 @@ import static java.lang.Math.min;
  * <h4>Space</h4>
  *
  * Space between children may be specified either by using instances of the
- * dedicated {@link android.support.v7.widget.Space} view or by setting the
+ * dedicated {@link androidx.appcompat.widget.Space} view or by setting the
  *
  * {@link ViewGroup.MarginLayoutParams#leftMargin leftMargin},
  * {@link ViewGroup.MarginLayoutParams#topMargin topMargin},
@@ -640,7 +640,7 @@ public class GridLayout extends android.view.ViewGroup {
 
     /** @noinspection UnusedParameters*/
     private int getDefaultMargin(View c, boolean horizontal, boolean leading) {
-        if (c.getClass() == android.support.v7.widget.Space.class) {
+        if (c.getClass() == androidx.appcompat.widget.Space.class) {
             return 0;
         }
         return mDefaultGap / 2;

@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package android.support.v7.media;
+package androidx.mediarouter.media;
 
 import android.app.PendingIntent;
 import android.os.Bundle;
 import android.os.SystemClock;
-import android.support.v4.util.TimeUtils;
+import androidx.core.util.TimeUtils;
 
 /**
  * Describes the playback status of a media session.

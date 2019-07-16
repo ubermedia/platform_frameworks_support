@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.internal.view;
+package androidx.core.internal.view;
 
 /**
  * Subclass of {@link SupportMenu} for sub menus.

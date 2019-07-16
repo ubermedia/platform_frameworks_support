@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package android.support.v7.app;
+package androidx.appcompat.app;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.v7.mediarouter.R;
+import androidx.appcompat.mediarouter.R;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
 

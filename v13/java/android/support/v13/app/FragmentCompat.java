@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v13.app;
+package androidx.core.app;
 
 import android.app.Fragment;
 

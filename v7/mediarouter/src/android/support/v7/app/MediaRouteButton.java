@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.app;
+package androidx.appcompat.app;
 
 import android.app.Activity;
 import android.content.Context;
@@ -23,13 +23,13 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.graphics.drawable.DrawableCompat;
-import android.support.v4.view.GravityCompat;
-import android.support.v7.media.MediaRouter;
-import android.support.v7.media.MediaRouteSelector;
-import android.support.v7.mediarouter.R;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.core.graphics.drawable.DrawableCompat;
+import androidx.core.view.GravityCompat;
+import androidx.mediarouter.media.MediaRouter;
+import androidx.mediarouter.media.MediaRouteSelector;
+import androidx.appcompat.mediarouter.R;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;

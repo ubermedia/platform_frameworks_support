@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.print;
+package androidx.print;
 
 import android.content.Context;
 import android.graphics.Bitmap;

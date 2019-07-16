@@ -20,7 +20,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.media.AudioManager;
 import android.os.Build;
-import android.support.v4.view.KeyEventCompat;
+import androidx.core.view.KeyEventCompat;
 import android.view.KeyEvent;
 import android.view.View;
 

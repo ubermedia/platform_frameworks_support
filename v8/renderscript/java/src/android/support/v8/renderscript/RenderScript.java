@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v8.renderscript;
+package androidx.renderscript;
 
 import java.io.File;
 import java.lang.reflect.Field;
@@ -745,7 +745,7 @@ public class RenderScript {
      * some time after {@code rsSendToClient} completes in the script,
      * as {@code rsSendToClient} is asynchronous. Message handlers are
      * not guaranteed to have completed when {@link
-     * android.support.v8.renderscript.RenderScript#finish} returns.
+     * androidx.renderscript.RenderScript#finish} returns.
      *
      */
     public static class RSMessageHandler implements Runnable {

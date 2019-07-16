@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v8.renderscript;
+package androidx.renderscript;
 
 import java.lang.reflect.Field;
 
@@ -22,7 +22,7 @@ import android.util.Log;
 
 /**
  * <p>An Element represents one item within an {@link
- * android.support.v8.renderscript.Allocation}.  An Element is roughly
+ * androidx.renderscript.Allocation}.  An Element is roughly
  * equivalent to a C type in a RenderScript kernel. Elements may be basic or
  * complex. Some basic elements are</p> <ul> <li>A single float value
  * (equivalent to a float in a kernel)</li> <li>A four-element float vector
@@ -37,18 +37,18 @@ import android.util.Log;
  * script.</p>
  *
  * <p>Basic Elements are comprised of a {@link
- * android.support.v8.renderscript.Element.DataType} and a {@link
- * android.support.v8.renderscript.Element.DataKind}. The DataType encodes C
+ * androidx.renderscript.Element.DataType} and a {@link
+ * androidx.renderscript.Element.DataKind}. The DataType encodes C
  * type information of an Element, while the DataKind encodes how that Element
- * should be interpreted by a {@link android.support.v8.renderscript.Sampler}.
- * Note that {@link android.support.v8.renderscript.Allocation} objects with
- * DataKind {@link android.support.v8.renderscript.Element.DataKind#USER} cannot
- * be used as input for a {@link android.support.v8.renderscript.Sampler}. In
- * general, {@link android.support.v8.renderscript.Allocation} objects that are
- * intended for use with a {@link android.support.v8.renderscript.Sampler}
+ * should be interpreted by a {@link androidx.renderscript.Sampler}.
+ * Note that {@link androidx.renderscript.Allocation} objects with
+ * DataKind {@link androidx.renderscript.Element.DataKind#USER} cannot
+ * be used as input for a {@link androidx.renderscript.Sampler}. In
+ * general, {@link androidx.renderscript.Allocation} objects that are
+ * intended for use with a {@link androidx.renderscript.Sampler}
  * should use bitmap-derived Elements such as
- * {@link android.support.v8.renderscript.Element#RGBA_8888} or {@link
- * android.support.v8.renderscript#Element.A_8}.</p>
+ * {@link androidx.renderscript.Element#RGBA_8888} or {@link
+ * androidx.renderscript#Element.A_8}.</p>
  *
  * <div class="special reference">
  * <h3>Developer Guides</h3>

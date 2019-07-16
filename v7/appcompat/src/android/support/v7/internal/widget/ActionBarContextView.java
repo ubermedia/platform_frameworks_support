@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package android.support.v7.internal.widget;
+package androidx.appcompat.internal.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.support.v7.appcompat.R;
-import android.support.v7.view.ActionMode;
-import android.support.v7.internal.view.menu.ActionMenuPresenter;
-import android.support.v7.internal.view.menu.ActionMenuView;
-import android.support.v7.internal.view.menu.MenuBuilder;
+import androidx.appcompat.appcompat.R;
+import androidx.appcompat.view.ActionMode;
+import androidx.appcompat.internal.view.menu.ActionMenuPresenter;
+import androidx.appcompat.internal.view.menu.ActionMenuView;
+import androidx.appcompat.internal.view.menu.MenuBuilder;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;

@@ -15,7 +15,7 @@
  */
 
 
-package android.support.v4.app;
+package androidx.core.app;
 
 import android.app.Activity;
 import android.content.res.Configuration;
@@ -24,9 +24,9 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.InsetDrawable;
 import android.os.Build;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.widget.DrawerLayout;
+import androidx.core.view.GravityCompat;
+import androidx.core.view.ViewCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import android.view.MenuItem;
 import android.view.View;
 

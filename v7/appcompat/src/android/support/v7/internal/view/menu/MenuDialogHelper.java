@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.view.menu;
+package androidx.appcompat.internal.view.menu;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.IBinder;
-import android.support.v7.appcompat.R;
+import androidx.appcompat.appcompat.R;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;

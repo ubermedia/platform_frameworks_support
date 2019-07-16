@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.util;
+package androidx.core.util;
 
 class ContainerHelpers {
     static final int[] EMPTY_INTS = new int[0];

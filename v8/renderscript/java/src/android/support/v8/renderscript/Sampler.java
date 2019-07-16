@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v8.renderscript;
+package androidx.renderscript;
 
 
 import java.io.IOException;
@@ -33,10 +33,10 @@ import android.graphics.BitmapFactory;
  * function to return values from normalized coordinates.
  *
  * Any Allocation used with a Sampler must have been created with {@link
- * android.support.v8.renderscript.Allocation#USAGE_GRAPHICS_TEXTURE}; using a
- * Sampler on an {@link android.support.v8.renderscript.Allocation} that was not
+ * androidx.renderscript.Allocation#USAGE_GRAPHICS_TEXTURE}; using a
+ * Sampler on an {@link androidx.renderscript.Allocation} that was not
  * created with
- * {@link android.support.v8.renderscript.Allocation#USAGE_GRAPHICS_TEXTURE} is
+ * {@link androidx.renderscript.Allocation#USAGE_GRAPHICS_TEXTURE} is
  * undefined.
  **/
 public class Sampler extends BaseObj {

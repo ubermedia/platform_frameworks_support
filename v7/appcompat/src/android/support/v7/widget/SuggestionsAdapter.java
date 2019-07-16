@@ -1,4 +1,4 @@
-package android.support.v7.widget;
+package androidx.appcompat.widget;
 
 /*
  * Copyright (C) 2013 The Android Open Source Project
@@ -30,8 +30,8 @@ import android.database.Cursor;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.widget.ResourceCursorAdapter;
-import android.support.v7.appcompat.R;
+import androidx.cursoradapter.widget.ResourceCursorAdapter;
+import androidx.appcompat.appcompat.R;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.TextUtils;

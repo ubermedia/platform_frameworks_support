@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.app;
+package androidx.core.app;
 
 import android.app.Activity;
 import android.content.ComponentCallbacks;
@@ -25,8 +25,11 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v4.util.SimpleArrayMap;
-import android.support.v4.util.DebugUtils;
+import androidx.collection.SimpleArrayMap;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.core.util.DebugUtils;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.SparseArray;

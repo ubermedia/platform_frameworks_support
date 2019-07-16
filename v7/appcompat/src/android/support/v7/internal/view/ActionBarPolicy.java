@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.view;
+package androidx.appcompat.internal.view;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Build;
-import android.support.v7.appcompat.R;
+import androidx.appcompat.appcompat.R;
 
 /**
  * Allows components to query for various configuration policy decisions about how the action bar

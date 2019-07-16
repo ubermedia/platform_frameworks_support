@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package android.support.v7.media;
+package androidx.mediarouter.media;
 
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.media.MediaRouter.ControlRequestCallback;
+import androidx.mediarouter.media.MediaRouter.ControlRequestCallback;
 
 /**
  * Media route providers are used to publish additional media routes for

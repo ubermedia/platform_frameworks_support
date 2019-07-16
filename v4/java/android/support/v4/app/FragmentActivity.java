@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.app;
+package androidx.core.app;
 
 import android.app.Activity;
 import android.content.Context;
@@ -26,7 +26,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Parcelable;
-import android.support.v4.util.SimpleArrayMap;
+import androidx.collection.SimpleArrayMap;
+import androidx.fragment.app.Fragment;
+import androidx.loader.content.Loader;
+
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -42,8 +45,8 @@ import java.util.ArrayList;
 
 /**
  * Base class for activities that want to use the support-based
- * {@link android.support.v4.app.Fragment} and
- * {@link android.support.v4.content.Loader} APIs.
+ * {@link Fragment} and
+ * {@link Loader} APIs.
  *
  * <p>When using this class as opposed to new platform's built-in fragment
  * and loader support, you must use the {@link #getSupportFragmentManager()}
@@ -52,8 +55,8 @@ import java.util.ArrayList;
  *
  * <p class="note"><strong>Note:</strong> If you want to implement an activity that includes
  * an <a href="{@docRoot}guide/topics/ui/actionbar.html">action bar</a>, you should instead use
- * the {@link android.support.v7.app.ActionBarActivity} class, which is a subclass of this one,
- * so allows you to use {@link android.support.v4.app.Fragment} APIs on API level 7 and higher.</p>
+ * the {@link androidx.appcompat.app.ActionBarActivity} class, which is a subclass of this one,
+ * so allows you to use {@link Fragment} APIs on API level 7 and higher.</p>
  *
  * <p>Known limitations:</p>
  * <ul>

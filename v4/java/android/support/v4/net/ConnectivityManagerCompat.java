@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.net;
+package androidx.core.net;
 
 import static android.net.ConnectivityManager.TYPE_MOBILE;
 import static android.net.ConnectivityManager.TYPE_WIFI;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.view;
+package androidx.core.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -29,6 +29,10 @@ import android.view.ViewParent;
 import android.widget.TextView;
 
 import java.lang.ref.WeakReference;
+
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.PagerTabStrip;
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * PagerTitleStrip is a non-interactive indicator of the current, next,

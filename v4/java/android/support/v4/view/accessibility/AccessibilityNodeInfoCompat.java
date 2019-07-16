@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package android.support.v4.view.accessibility;
+package androidx.core.view.accessibility;
 
 import android.graphics.Rect;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat;
-import android.support.v4.view.ViewCompat;
+import androidx.core.accessibilityservice.AccessibilityServiceInfoCompat;
+import androidx.core.view.ViewCompat;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 

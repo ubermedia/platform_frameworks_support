@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.util;
+package androidx.core.util;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

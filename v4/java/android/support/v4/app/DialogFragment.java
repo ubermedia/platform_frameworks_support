@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.app;
+package androidx.core.app;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -26,6 +26,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 /**
  * Static library support version of the framework's {@link android.app.DialogFragment}.

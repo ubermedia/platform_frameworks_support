@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.net;
+package androidx.core.net;
 
 import android.net.TrafficStats;
 

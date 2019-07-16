@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package android.support.v7.app;
+package androidx.appcompat.app;
 
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.appcompat.R;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.appcompat.R;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
@@ -42,7 +42,7 @@ import android.widget.SpinnerAdapter;
  *
  * <p>When using the support library, you can add the action bar to the top of your activity
  * window by extending the {@link ActionBarActivity} class and setting the activity theme to
- * {@link android.support.v7.appcompat.R.style#Theme_AppCompat Theme.AppCompat} or a similar theme.
+ * {@link androidx.appcompat.appcompat.R.style#Theme_AppCompat Theme.AppCompat} or a similar theme.
  *
  * <p>By default, the action bar shows the application icon on
  * the left, followed by the activity title. If your activity has an options menu, you can make
@@ -50,13 +50,13 @@ import android.widget.SpinnerAdapter;
  * modify various characteristics of the action bar or remove it completely.</p>
  *
  * <p>From your activity, you can retrieve an instance of {@link ActionBar} by calling {@link
- * android.support.v7.app.ActionBarActivity#getSupportActionBar}.</p>
+ * androidx.appcompat.app.ActionBarActivity#getSupportActionBar}.</p>
  *
  * <p>In some cases, the action bar may be overlayed by another bar that enables contextual actions,
- * using an {@link android.support.v7.view.ActionMode}. For example, when the user selects one or
+ * using an {@link androidx.appcompat.view.ActionMode}. For example, when the user selects one or
  * more items in your activity, you can enable an action mode that offers actions specific to the
  * selected items, with a UI that temporarily replaces the action bar. Although the UI may occupy
- * the same space, the {@link android.support.v7.view.ActionMode} APIs are distinct and independent
+ * the same space, the {@link androidx.appcompat.view.ActionMode} APIs are distinct and independent
  * from those for {@link ActionBar}.
  *
  * <div class="special reference">

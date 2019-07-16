@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package android.support.v4.app;
+package androidx.core.app;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v4.util.LogWriter;
+import androidx.core.util.LogWriter;
 import android.text.TextUtils;
 import android.util.Log;
 

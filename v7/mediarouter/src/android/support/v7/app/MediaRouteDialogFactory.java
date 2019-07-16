@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.app;
+package androidx.appcompat.app;
 
 /**
  * The media route dialog factory is responsible for creating the media route

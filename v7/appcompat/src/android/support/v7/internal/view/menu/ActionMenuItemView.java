@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.view.menu;
+package androidx.appcompat.internal.view.menu;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.v7.appcompat.R;
-import android.support.v7.internal.widget.CompatTextView;
+import androidx.appcompat.appcompat.R;
+import androidx.appcompat.internal.widget.CompatTextView;
 import android.text.TextUtils;
 import android.text.method.TransformationMethod;
 import android.util.AttributeSet;
@@ -64,9 +64,9 @@ public class ActionMenuItemView extends CompatTextView
         super(context, attrs, defStyle);
         final Resources res = context.getResources();
         mAllowTextWithIcon = res.getBoolean(
-                android.support.v7.appcompat.R.bool.abc_config_allowActionMenuItemTextWithIcon);
+                androidx.appcompat.appcompat.R.bool.abc_config_allowActionMenuItemTextWithIcon);
         TypedArray a = context.obtainStyledAttributes(attrs,
-                android.support.v7.appcompat.R.styleable.ActionMenuItemView, 0, 0);
+                androidx.appcompat.appcompat.R.styleable.ActionMenuItemView, 0, 0);
         mMinWidth = a.getDimensionPixelSize(
                 R.styleable.ActionMenuItemView_android_minWidth, 0);
         a.recycle();

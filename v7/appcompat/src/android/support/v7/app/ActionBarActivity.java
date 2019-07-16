@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package android.support.v7.app;
+package androidx.appcompat.app;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.NavUtils;
-import android.support.v4.app.TaskStackBuilder;
-import android.support.v4.view.WindowCompat;
-import android.support.v7.view.ActionMode;
+import androidx.legacy.app.ActionBarDrawerToggle;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.FragmentActivity;
+import androidx.core.app.NavUtils;
+import androidx.core.app.TaskStackBuilder;
+import androidx.core.view.WindowCompat;
+import androidx.appcompat.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -41,7 +41,7 @@ import android.view.Window;
  *
  * <p>You can add an {@link ActionBar} to your activity when running on API level 7 or higher
  * by extending this class for your activity and setting the activity theme to
- * {@link android.support.v7.appcompat.R.style#Theme_AppCompat Theme.AppCompat} or a similar theme.
+ * {@link androidx.appcompat.appcompat.R.style#Theme_AppCompat Theme.AppCompat} or a similar theme.
  *
  * <div class="special reference">
  * <h3>Developer Guides</h3>

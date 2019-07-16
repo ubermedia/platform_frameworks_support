@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package android.support.v7.media;
+package androidx.mediarouter.media;
 
 import android.content.IntentFilter;
 import android.os.Bundle;

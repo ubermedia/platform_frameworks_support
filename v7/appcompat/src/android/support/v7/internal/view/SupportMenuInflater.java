@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.view;
+package androidx.appcompat.internal.view;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -23,12 +23,12 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.content.res.XmlResourceParser;
-import android.support.v4.internal.view.SupportMenu;
-import android.support.v4.view.ActionProvider;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.appcompat.R;
-import android.support.v7.internal.view.menu.MenuItemImpl;
-import android.support.v7.internal.view.menu.MenuItemWrapperICS;
+import androidx.core.internal.view.SupportMenu;
+import androidx.core.view.ActionProvider;
+import androidx.core.view.MenuItemCompat;
+import androidx.appcompat.appcompat.R;
+import androidx.appcompat.internal.view.menu.MenuItemImpl;
+import androidx.appcompat.internal.view.menu.MenuItemWrapperICS;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.Xml;

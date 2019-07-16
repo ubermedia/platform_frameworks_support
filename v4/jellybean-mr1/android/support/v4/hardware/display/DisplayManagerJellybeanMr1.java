@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.hardware.display;
+package androidx.core.hardware.display;
 
 import android.content.Context;
 import android.view.Display;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.app;
+package androidx.appcompat.app;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -22,19 +22,19 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.appcompat.R;
-import android.support.v7.internal.view.ActionBarPolicy;
-import android.support.v7.internal.view.SupportMenuInflater;
-import android.support.v7.internal.view.menu.MenuBuilder;
-import android.support.v7.internal.view.menu.SubMenuBuilder;
-import android.support.v7.internal.widget.ActionBarContainer;
-import android.support.v7.internal.widget.ActionBarContextView;
-import android.support.v7.internal.widget.ActionBarOverlayLayout;
-import android.support.v7.internal.widget.ActionBarView;
-import android.support.v7.internal.widget.ScrollingTabContainerView;
-import android.support.v7.view.ActionMode;
-import android.support.v4.internal.view.SupportMenuItem;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.appcompat.appcompat.R;
+import androidx.appcompat.internal.view.ActionBarPolicy;
+import androidx.appcompat.internal.view.SupportMenuInflater;
+import androidx.appcompat.internal.view.menu.MenuBuilder;
+import androidx.appcompat.internal.view.menu.SubMenuBuilder;
+import androidx.appcompat.internal.widget.ActionBarContainer;
+import androidx.appcompat.internal.widget.ActionBarContextView;
+import androidx.appcompat.internal.widget.ActionBarOverlayLayout;
+import androidx.appcompat.internal.widget.ActionBarView;
+import androidx.appcompat.internal.widget.ScrollingTabContainerView;
+import androidx.appcompat.view.ActionMode;
+import androidx.core.internal.view.SupportMenuItem;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;

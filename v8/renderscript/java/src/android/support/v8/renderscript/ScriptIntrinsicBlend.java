@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package android.support.v8.renderscript;
+package androidx.renderscript;
 
 
 /**
  * Intrinsic kernels for blending two
- * {@link android.support.v8.renderscript.Allocation} objects.
+ * {@link androidx.renderscript.Allocation} objects.
  **/
 public class ScriptIntrinsicBlend extends ScriptIntrinsic {
     ScriptIntrinsicBlend(int id, RenderScript rs) {

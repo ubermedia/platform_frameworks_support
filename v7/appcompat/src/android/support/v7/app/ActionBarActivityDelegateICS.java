@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package android.support.v7.app;
+package androidx.appcompat.app;
 
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.view.WindowCompat;
-import android.support.v7.internal.view.ActionModeWrapper;
-import android.support.v7.internal.view.menu.MenuWrapperFactory;
-import android.support.v7.view.ActionMode;
+import androidx.legacy.app.ActionBarDrawerToggle;
+import androidx.core.view.WindowCompat;
+import androidx.appcompat.internal.view.ActionModeWrapper;
+import androidx.appcompat.internal.view.menu.MenuWrapperFactory;
+import androidx.appcompat.view.ActionMode;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;

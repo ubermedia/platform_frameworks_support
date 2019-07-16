@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.content.pm;
+package androidx.core.content.pm;
 
 /**
  * Helper for accessing features in {@link android.content.pm.ActivityInfo}

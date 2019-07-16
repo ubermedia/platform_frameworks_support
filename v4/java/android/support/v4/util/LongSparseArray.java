@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.util;
+package androidx.core.util;
 
 /**
  * SparseArray mapping longs to Objects, a version of the platform's

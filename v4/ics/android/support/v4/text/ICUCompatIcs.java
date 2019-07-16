@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.text;
+package androidx.core.text;
 
 import android.util.Log;
 

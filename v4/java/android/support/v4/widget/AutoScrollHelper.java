@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package android.support.v4.widget;
+package androidx.core.widget;
 
 import android.content.res.Resources;
 import android.os.SystemClock;
-import android.support.v4.view.MotionEventCompat;
-import android.support.v4.view.ViewCompat;
+import androidx.core.view.MotionEventCompat;
+import androidx.core.view.ViewCompat;
 import android.util.DisplayMetrics;
 import android.view.MotionEvent;
 import android.view.View;

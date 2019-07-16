@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.text;
+package androidx.core.text;
 
 /**
  * Interface for objects that use a heuristic for guessing at the paragraph direction by examining text.

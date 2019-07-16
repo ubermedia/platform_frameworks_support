@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.content;
+package androidx.core.content;
 
 import android.content.Intent;
 

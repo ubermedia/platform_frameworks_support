@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v8.renderscript;
+package androidx.renderscript;
 
 /**
  * Base class for all Intrinsic scripts. An intrinsic a script

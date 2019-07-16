@@ -14,13 +14,16 @@
  * limitations under the License.
  */
 
-package android.support.v4.app;
+package androidx.core.app;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.content.Loader;
-import android.support.v4.util.DebugUtils;
-import android.support.v4.util.SparseArrayCompat;
+
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.loader.content.Loader;
+import androidx.core.util.DebugUtils;
+import androidx.collection.SparseArrayCompat;
 import android.util.Log;
 
 import java.io.FileDescriptor;

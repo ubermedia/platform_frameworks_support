@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.widget;
+package androidx.appcompat.internal.widget;
 
 import android.content.Context;
 import android.database.DataSetObserver;

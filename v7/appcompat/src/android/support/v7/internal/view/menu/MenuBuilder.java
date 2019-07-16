@@ -1,6 +1,6 @@
 // Copyright 2012 Google Inc. All Rights Reserved.
 
-package android.support.v7.internal.view.menu;
+package androidx.appcompat.internal.view.menu;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -12,11 +12,11 @@ import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.appcompat.R;
-import android.support.v4.view.ActionProvider;
-import android.support.v4.internal.view.SupportMenu;
-import android.support.v4.internal.view.SupportMenuItem;
+import androidx.core.view.MenuItemCompat;
+import androidx.appcompat.appcompat.R;
+import androidx.core.view.ActionProvider;
+import androidx.core.internal.view.SupportMenu;
+import androidx.core.internal.view.SupportMenuItem;
 import android.util.SparseArray;
 import android.view.ContextMenu;
 import android.view.KeyCharacterMap;
@@ -31,7 +31,7 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 /**
- * Implementation of the {@link android.support.v4.internal.view.SupportMenu} interface for creating a
+ * Implementation of the {@link androidx.core.internal.view.SupportMenu} interface for creating a
  * standard menu UI.
  *
  * @hide

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.view.menu;
+package androidx.appcompat.internal.view.menu;
 
-import android.support.v4.view.ActionProvider;
+import androidx.core.view.ActionProvider;
 import android.view.MenuItem;
 import android.view.View;
 

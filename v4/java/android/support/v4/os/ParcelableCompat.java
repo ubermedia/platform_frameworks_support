@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.os;
+package androidx.core.os;
 
 import android.os.Parcel;
 import android.os.Parcelable;

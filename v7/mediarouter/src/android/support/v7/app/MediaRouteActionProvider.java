@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package android.support.v7.app;
+package androidx.appcompat.app;
 
 import android.content.Context;
-import android.support.v4.view.ActionProvider;
-import android.support.v7.media.MediaRouter;
-import android.support.v7.media.MediaRouteSelector;
+import androidx.core.view.ActionProvider;
+import androidx.mediarouter.media.MediaRouter;
+import androidx.mediarouter.media.MediaRouteSelector;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;

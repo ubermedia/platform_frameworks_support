@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.view.menu;
+package androidx.appcompat.internal.view.menu;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.support.v4.internal.view.SupportMenuItem;
-import android.support.v4.view.ActionProvider;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.view.CollapsibleActionView;
+import androidx.core.internal.view.SupportMenuItem;
+import androidx.core.view.ActionProvider;
+import androidx.core.view.MenuItemCompat;
+import androidx.appcompat.view.CollapsibleActionView;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.MenuItem;

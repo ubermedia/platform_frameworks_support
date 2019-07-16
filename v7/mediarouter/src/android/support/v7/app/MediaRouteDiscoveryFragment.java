@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package android.support.v7.app;
+package androidx.appcompat.app;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v7.media.MediaRouter;
-import android.support.v7.media.MediaRouteSelector;
+import androidx.fragment.app.Fragment;
+import androidx.mediarouter.media.MediaRouter;
+import androidx.mediarouter.media.MediaRouteSelector;
 
 /**
  * Media route discovery fragment.
@@ -110,7 +110,7 @@ public class MediaRouteDiscoveryFragment extends Fragment {
     }
 
     /**
-     * Called to create the {@link android.support.v7.media.MediaRouter.Callback callback}
+     * Called to create the {@link androidx.mediarouter.media.MediaRouter.Callback callback}
      * that will be registered.
      * <p>
      * The default callback does nothing.  The application may override this method to
@@ -125,7 +125,7 @@ public class MediaRouteDiscoveryFragment extends Fragment {
 
     /**
      * Called to prepare the callback flags that will be used when the
-     * {@link android.support.v7.media.MediaRouter.Callback callback} is registered.
+     * {@link androidx.mediarouter.media.MediaRouter.Callback callback} is registered.
      * <p>
      * The default implementation returns {@link MediaRouter#CALLBACK_FLAG_REQUEST_DISCOVERY}.
      * </p>

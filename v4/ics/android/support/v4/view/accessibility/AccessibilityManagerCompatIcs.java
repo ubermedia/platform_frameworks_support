@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.view.accessibility;
+package androidx.core.view.accessibility;
 
 import android.accessibilityservice.AccessibilityServiceInfo;
 import android.view.accessibility.AccessibilityManager;

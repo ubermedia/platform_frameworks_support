@@ -1,4 +1,4 @@
-package android.support.v7.internal.widget;
+package androidx.appcompat.internal.widget;
 
 /*
  * Copyright (C) 2013 Android Open Source Project

@@ -14,11 +14,13 @@
  * limitations under the License.
  */
 
-package android.support.v4.util;
+package androidx.core.util;
 
 import android.util.Log;
 
 import java.util.Map;
+
+import androidx.collection.ArrayMap;
 
 /**
  * Base implementation of {@link ArrayMap} that doesn't include any standard Java

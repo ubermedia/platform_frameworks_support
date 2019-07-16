@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.widget;
+package androidx.appcompat.internal.widget;
 
 import android.content.Context;
 import android.content.Intent;
@@ -24,8 +24,8 @@ import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.database.DataSetObserver;
 import android.graphics.drawable.Drawable;
-import android.support.v4.view.ActionProvider;
-import android.support.v7.appcompat.R;
+import androidx.core.view.ActionProvider;
+import androidx.appcompat.appcompat.R;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;

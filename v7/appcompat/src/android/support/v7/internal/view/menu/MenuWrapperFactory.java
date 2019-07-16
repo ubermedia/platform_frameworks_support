@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.view.menu;
+package androidx.appcompat.internal.view.menu;
 
 import android.os.Build;
-import android.support.v4.internal.view.SupportMenu;
-import android.support.v4.internal.view.SupportMenuItem;
-import android.support.v4.internal.view.SupportSubMenu;
+import androidx.core.internal.view.SupportMenu;
+import androidx.core.internal.view.SupportMenuItem;
+import androidx.core.internal.view.SupportSubMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 

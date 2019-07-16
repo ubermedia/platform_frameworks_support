@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.view;
+package androidx.core.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -25,6 +25,10 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
+
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.PagerTitleStrip;
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * PagerTabStrip is an interactive indicator of the current, next,

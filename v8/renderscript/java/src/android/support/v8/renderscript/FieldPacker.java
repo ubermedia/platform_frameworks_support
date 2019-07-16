@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package android.support.v8.renderscript;
+package androidx.renderscript;
 
 import android.os.SystemProperties;
-import android.support.v8.renderscript.RenderScript;
+import androidx.renderscript.RenderScript;
 
 /**
  * Utility class for packing arguments and structures from Android system objects to

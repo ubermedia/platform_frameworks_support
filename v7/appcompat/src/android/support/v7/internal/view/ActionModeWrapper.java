@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.view;
+package androidx.appcompat.internal.view;
 
 import android.content.Context;
-import android.support.v7.internal.view.menu.MenuWrapperFactory;
-import android.support.v7.view.ActionMode;
+import androidx.appcompat.internal.view.menu.MenuWrapperFactory;
+import androidx.appcompat.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;

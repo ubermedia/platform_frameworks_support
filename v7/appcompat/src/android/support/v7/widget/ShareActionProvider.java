@@ -14,24 +14,24 @@
  * limitations under the License.
  */
 
-package android.support.v7.widget;
+package androidx.appcompat.widget;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.drawable.Drawable;
-import android.support.v4.view.ActionProvider;
-import android.support.v7.appcompat.R;
-import android.support.v7.internal.widget.ActivityChooserModel;
-import android.support.v7.internal.widget.ActivityChooserView;
+import androidx.core.view.ActionProvider;
+import androidx.appcompat.appcompat.R;
+import androidx.appcompat.internal.widget.ActivityChooserModel;
+import androidx.appcompat.internal.widget.ActivityChooserView;
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MenuItem.OnMenuItemClickListener;
 import android.view.SubMenu;
 import android.view.View;
-import android.support.v7.internal.widget.ActivityChooserModel.OnChooseActivityListener;
+import androidx.appcompat.internal.widget.ActivityChooserModel.OnChooseActivityListener;
 
 /**
  * This is a provider for a share action. It is responsible for creating views
@@ -55,7 +55,7 @@ import android.support.v7.internal.widget.ActivityChooserModel.OnChooseActivityL
  *      // Get the provider and hold onto it to set/change the share intent.
  *      mShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(menuItem);
  *      // Set history different from the default before getting the action
- *      // view since a call to {@link android.support.v4.view.MenuItemCompat#getActionView(android.view.MenuItem) MenuItemCompat.getActionView()} calls
+ *      // view since a call to {@link androidx.core.view.MenuItemCompat#getActionView(android.view.MenuItem) MenuItemCompat.getActionView()} calls
  *      // {@link ActionProvider#onCreateActionView()} which uses the backing file name. Omit this
  *      // line if using the default share history file is desired.
  *      mShareActionProvider.setShareHistoryFileName("custom_share_history.xml");

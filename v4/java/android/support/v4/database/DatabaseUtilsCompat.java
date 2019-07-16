@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.database;
+package androidx.core.database;
 
 import android.text.TextUtils;
 

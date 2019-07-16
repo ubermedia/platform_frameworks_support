@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.content;
+package androidx.core.content;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Callable;
@@ -33,6 +33,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Process;
+
+import androidx.loader.content.AsyncTaskLoader;
 
 /**
  * Copy of the required parts of {@link android.os.AsyncTask} from Android 3.0 that is

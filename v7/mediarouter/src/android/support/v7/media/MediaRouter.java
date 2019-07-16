@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.media;
+package androidx.mediarouter.media;
 
 import android.content.ComponentName;
 import android.content.ContentResolver;
@@ -27,8 +27,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
-import android.support.v4.hardware.display.DisplayManagerCompat;
-import android.support.v7.media.MediaRouteProvider.ProviderMetadata;
+import androidx.core.hardware.display.DisplayManagerCompat;
+import androidx.mediarouter.media.MediaRouteProvider.ProviderMetadata;
 import android.util.Log;
 import android.view.Display;
 
@@ -116,11 +116,11 @@ public final class MediaRouter {
      * Applications should typically add a callback using this flag in the
      * {@link android.app.Activity activity's} {@link android.app.Activity#onStart onStart}
      * method and remove it in the {@link android.app.Activity#onStop onStop} method.
-     * The {@link android.support.v7.app.MediaRouteDiscoveryFragment} fragment may
+     * The {@link androidx.appcompat.app.MediaRouteDiscoveryFragment} fragment may
      * also be used for this purpose.
      * </p>
      *
-     * @see android.support.v7.app.MediaRouteDiscoveryFragment
+     * @see androidx.appcompat.app.MediaRouteDiscoveryFragment
      */
     public static final int CALLBACK_FLAG_REQUEST_DISCOVERY = 1 << 2;
 

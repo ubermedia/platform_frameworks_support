@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.app;
+package androidx.core.app;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -24,8 +24,8 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
-import android.support.v4.content.IntentCompat;
-import android.support.v4.view.MenuItemCompat;
+import androidx.core.content.IntentCompat;
+import androidx.core.view.MenuItemCompat;
 import android.text.Html;
 import android.text.Spanned;
 import android.util.Log;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.util;
+package androidx.core.util;
 
 /**
  * Helper for accessing features in {@link android.util.DebugUtils}

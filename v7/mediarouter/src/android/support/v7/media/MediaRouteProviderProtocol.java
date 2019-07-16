@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.media;
+package androidx.mediarouter.media;
 
 import android.content.Intent;
 import android.os.Messenger;

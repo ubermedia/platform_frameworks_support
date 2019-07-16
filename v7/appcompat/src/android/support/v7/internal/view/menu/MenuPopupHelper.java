@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.view.menu;
+package androidx.appcompat.internal.view.menu;
 
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Parcelable;
-import android.support.v7.appcompat.R;
-import android.support.v7.internal.widget.ListPopupWindow;
+import androidx.appcompat.appcompat.R;
+import androidx.appcompat.internal.widget.ListPopupWindow;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.MenuItem;

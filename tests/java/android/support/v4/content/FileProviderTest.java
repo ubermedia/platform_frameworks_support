@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.content;
+package androidx.core.content;
 
 import static android.provider.OpenableColumns.DISPLAY_NAME;
 import static android.provider.OpenableColumns.SIZE;
@@ -23,7 +23,7 @@ import android.content.ContentResolver;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Environment;
-import android.support.v4.content.FileProvider.SimplePathStrategy;
+import androidx.core.content.FileProvider.SimplePathStrategy;
 import android.test.AndroidTestCase;
 import android.test.MoreAsserts;
 

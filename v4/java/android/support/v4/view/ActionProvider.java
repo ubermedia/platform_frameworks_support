@@ -14,13 +14,15 @@
  * limitations under the License.
  */
 
-package android.support.v4.view;
+package androidx.core.view;
 
 import android.content.Context;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.SubMenu;
 import android.view.View;
+
+import androidx.fragment.app.Fragment;
 
 /**
  * This class is a mediator for accomplishing a given task, for example sharing a file. It is
@@ -46,7 +48,7 @@ import android.view.View;
  *
  * <ul><li> Setting the action provider on a {@link android.view.MenuItem} directly by
  * calling {@link
- * android.support.v4.view.MenuItemCompat#setActionProvider(android.view.MenuItem, ActionProvider)}.
+ * androidx.core.view.MenuItemCompat#setActionProvider(android.view.MenuItem, ActionProvider)}.
  * </li>
  *
  * <li>Declaring the action provider in the menu XML resource. For example:
@@ -60,8 +62,8 @@ import android.view.View;
  * </code></pre>
  * </li></ul></p>
  *
- * @see android.support.v4.view.MenuItemCompat#setActionProvider(android.view.MenuItem, ActionProvider)
- * @see android.support.v4.view.MenuItemCompat#getActionProvider(android.view.MenuItem)
+ * @see androidx.core.view.MenuItemCompat#setActionProvider(android.view.MenuItem, ActionProvider)
+ * @see androidx.core.view.MenuItemCompat#getActionProvider(android.view.MenuItem)
  */
 public abstract class ActionProvider {
     private static final String TAG = "ActionProvider(support)";
@@ -166,7 +168,7 @@ public abstract class ActionProvider {
      * </li>
      *
      * <li>Receiving a call to
-     * {@link android.support.v4.app.Fragment#onOptionsItemSelected(android.view.MenuItem)}
+     * {@link Fragment#onOptionsItemSelected(android.view.MenuItem)}
      * Fragment.onOptionsItemSelected(MenuItem)}</li>
      *
      * <li>Launching the {@link android.content.Intent} set via

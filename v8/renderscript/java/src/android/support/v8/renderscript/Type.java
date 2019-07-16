@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v8.renderscript;
+package androidx.renderscript;
 
 
 import java.lang.reflect.Field;
@@ -23,12 +23,12 @@ import android.graphics.ImageFormat;
 import android.util.Log;
 
 /**
- * <p>A Type describes the {@link android.support.v8.renderscript.Element} and
- * dimensions used for an {@link android.support.v8.renderscript.Allocation} or
+ * <p>A Type describes the {@link androidx.renderscript.Element} and
+ * dimensions used for an {@link androidx.renderscript.Allocation} or
  * a parallel operation. Types are created through
- * {@link android.support.v8.renderscript.Type.Builder}.</p>
+ * {@link androidx.renderscript.Type.Builder}.</p>
  *
- * <p>A Type always includes an {@link android.support.v8.renderscript.Element}
+ * <p>A Type always includes an {@link androidx.renderscript.Element}
  * and an X dimension. A Type may be multidimensional, up to three dimensions.
  * A nonzero value in the Y or Z dimensions indicates that the dimension is
  * present. Note that a Type with only a given X dimension and a Type with the
@@ -39,7 +39,7 @@ import android.util.Log;
  * present. </p>
  *
  * <p>A Type also supports YUV format information to support an {@link
- * android.support.v8.renderscript.Allocation} in a YUV format. The YUV formats
+ * androidx.renderscript.Allocation} in a YUV format. The YUV formats
  * supported are {@link android.graphics.ImageFormat#YV12} and {@link
  * android.graphics.ImageFormat#NV21}.</p>
  *

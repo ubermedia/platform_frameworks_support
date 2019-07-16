@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v8.renderscript;
+package androidx.renderscript;
 
 class ScriptIntrinsicBlendThunker extends ScriptIntrinsicBlend {
     android.renderscript.ScriptIntrinsicBlend mN;

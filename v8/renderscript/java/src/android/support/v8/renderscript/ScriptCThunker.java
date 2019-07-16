@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v8.renderscript;
+package androidx.renderscript;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -118,7 +118,7 @@ class ScriptCThunker extends android.renderscript.ScriptC {
     }
 
     void thunkForEach(int slot, Allocation ain, Allocation aout, FieldPacker v,
-                      android.support.v8.renderscript.Script.LaunchOptions sc) {
+                      androidx.renderscript.Script.LaunchOptions sc) {
         try {
             android.renderscript.Script.LaunchOptions lo = null;
             if (sc != null) {

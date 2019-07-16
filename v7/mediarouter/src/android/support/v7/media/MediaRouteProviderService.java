@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.media;
+package androidx.mediarouter.media;
 
 import android.app.Service;
 import android.content.Intent;
@@ -32,7 +32,7 @@ import android.util.SparseArray;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
-import static android.support.v7.media.MediaRouteProviderProtocol.*;
+import static androidx.mediarouter.media.MediaRouteProviderProtocol.*;
 
 /**
  * Base class for media route provider services.

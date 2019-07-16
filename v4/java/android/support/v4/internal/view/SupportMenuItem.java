@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package android.support.v4.internal.view;
+package androidx.core.internal.view;
 
-import android.support.v4.view.ActionProvider;
-import android.support.v4.view.MenuItemCompat;
+import androidx.core.view.ActionProvider;
+import androidx.core.view.MenuItemCompat;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -103,7 +103,7 @@ public interface SupportMenuItem extends android.view.MenuItem {
      * as an action within a parent.
      *
      * <p><strong>Note:</strong> Setting an action view overrides the action provider
-     * provider set via {@link #setSupportActionProvider(android.support.v4.view.ActionProvider)}. </p>
+     * provider set via {@link #setSupportActionProvider(androidx.core.view.ActionProvider)}. </p>
      *
      * @param view View to use for presenting this item to the user.
      * @return This Item so additional setters can be called.
@@ -117,7 +117,7 @@ public interface SupportMenuItem extends android.view.MenuItem {
      * as an action within a parent.
      *
      * <p><strong>Note:</strong> Setting an action view overrides the action provider
-     * provider set via {@link #setSupportActionProvider(android.support.v4.view.ActionProvider)}. </p>
+     * provider set via {@link #setSupportActionProvider(androidx.core.view.ActionProvider)}. </p>
      *
      * @param resId Layout resource to use for presenting this item to the user.
      * @return This Item so additional setters can be called.
@@ -135,7 +135,7 @@ public interface SupportMenuItem extends android.view.MenuItem {
     public View getActionView();
 
     /**
-     * Sets the {@link android.support.v4.view.ActionProvider} responsible for creating an action view if
+     * Sets the {@link androidx.core.view.ActionProvider} responsible for creating an action view if
      * the item is placed on the action bar. The provider also provides a default
      * action invoked if the item is placed in the overflow menu.
      *
@@ -145,7 +145,7 @@ public interface SupportMenuItem extends android.view.MenuItem {
      *
      * @param actionProvider The action provider.
      * @return This Item so additional setters can be called.
-     * @see android.support.v4.view.ActionProvider
+     * @see androidx.core.view.ActionProvider
      */
     public SupportMenuItem setSupportActionProvider(ActionProvider actionProvider);
 
@@ -161,8 +161,8 @@ public interface SupportMenuItem extends android.view.MenuItem {
     /**
      * Expand the action view associated with this menu item. The menu item must have an action view
      * set, as well as the showAsAction flag {@link #SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW}. If a
-     * listener has been set using {@link #setSupportOnActionExpandListener(android.support.v4.view.MenuItemCompat.OnActionExpandListener)}
-     * it will have its {@link android.support.v4.view.MenuItemCompat.OnActionExpandListener#onMenuItemActionExpand(MenuItem)} method
+     * listener has been set using {@link #setSupportOnActionExpandListener(androidx.core.view.MenuItemCompat.OnActionExpandListener)}
+     * it will have its {@link androidx.core.view.MenuItemCompat.OnActionExpandListener#onMenuItemActionExpand(MenuItem)} method
      * invoked. The listener may return false from this method to prevent expanding the action view.
      *
      * @return true if the action view was expanded, false otherwise.
@@ -172,8 +172,8 @@ public interface SupportMenuItem extends android.view.MenuItem {
     /**
      * Collapse the action view associated with this menu item. The menu item must have an action
      * view set, as well as the showAsAction flag {@link #SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW}. If a
-     * listener has been set using {@link #setSupportOnActionExpandListener(android.support.v4.view.MenuItemCompat.OnActionExpandListener)}
-     * it will have its {@link android.support.v4.view.MenuItemCompat.OnActionExpandListener#onMenuItemActionCollapse(MenuItem)} method
+     * listener has been set using {@link #setSupportOnActionExpandListener(androidx.core.view.MenuItemCompat.OnActionExpandListener)}
+     * it will have its {@link androidx.core.view.MenuItemCompat.OnActionExpandListener#onMenuItemActionCollapse(MenuItem)} method
      * invoked. The listener may return false from this method to prevent collapsing the action
      * view.
      *
@@ -188,12 +188,12 @@ public interface SupportMenuItem extends android.view.MenuItem {
      * @see #expandActionView()
      * @see #collapseActionView()
      * @see #SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW
-     * @see android.support.v4.view.MenuItemCompat.OnActionExpandListener
+     * @see androidx.core.view.MenuItemCompat.OnActionExpandListener
      */
     public boolean isActionViewExpanded();
 
     /**
-     * Set an {@link android.support.v4.view.MenuItemCompat.OnActionExpandListener} on this menu item to be notified when the associated
+     * Set an {@link androidx.core.view.MenuItemCompat.OnActionExpandListener} on this menu item to be notified when the associated
      * action view is expanded or collapsed. The menu item must be configured to expand or collapse
      * its action view using the flag {@link #SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW}.
      *

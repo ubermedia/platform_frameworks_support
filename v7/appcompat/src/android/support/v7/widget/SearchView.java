@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.widget;
+package androidx.appcompat.widget;
 
 import android.app.PendingIntent;
 import android.app.SearchManager;
@@ -36,10 +36,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.ResultReceiver;
 import android.speech.RecognizerIntent;
-import android.support.v4.view.KeyEventCompat;
-import android.support.v4.widget.CursorAdapter;
-import android.support.v7.appcompat.R;
-import android.support.v7.view.CollapsibleActionView;
+import androidx.core.view.KeyEventCompat;
+import androidx.cursoradapter.widget.CursorAdapter;
+import androidx.appcompat.appcompat.R;
+import androidx.appcompat.view.CollapsibleActionView;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.Spannable;
@@ -69,7 +69,7 @@ import android.widget.TextView.OnEditorActionListener;
 import java.lang.reflect.Method;
 import java.util.WeakHashMap;
 
-import static android.support.v7.widget.SuggestionsAdapter.getColumnString;
+import static androidx.appcompat.widget.SuggestionsAdapter.getColumnString;
 
 /**
  * A widget that provides a user interface for the user to enter a search query and submit a request
@@ -82,7 +82,7 @@ import static android.support.v7.widget.SuggestionsAdapter.getColumnString;
  * <em>only</em>, you should instead use the framework {@link android.widget.SearchView} class.</p>
  *
  * <p>
- * When the SearchView is used in an {@link android.support.v7.app.ActionBar}
+ * When the SearchView is used in an {@link androidx.appcompat.app.ActionBar}
  * as an action view, it's collapsed by default, so you must provide an icon for the action.
  * </p>
  * <p>
@@ -98,7 +98,7 @@ import static android.support.v7.widget.SuggestionsAdapter.getColumnString;
  * href="{@docRoot}guide/topics/ui/actionbar.html#ActionView">Action Bar</a> API guide</p>
  * </div>
  *
- * @see android.support.v4.view.MenuItemCompat#SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW
+ * @see androidx.core.view.MenuItemCompat#SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW
  */
 public class SearchView extends LinearLayout implements CollapsibleActionView {
 

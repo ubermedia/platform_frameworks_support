@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.app;
+package androidx.core.app;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -24,8 +24,8 @@ import android.content.Intent;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.content.IntentCompat;
+import androidx.core.content.ContextCompat;
+import androidx.core.content.IntentCompat;
 import android.util.Log;
 
 import java.util.ArrayList;

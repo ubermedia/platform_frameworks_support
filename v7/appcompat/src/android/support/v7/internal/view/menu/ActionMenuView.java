@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package android.support.v7.internal.view.menu;
+package androidx.appcompat.internal.view.menu;
 
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.os.Build;
-import android.support.v7.appcompat.R;
-import android.support.v7.internal.widget.LinearLayoutICS;
+import androidx.appcompat.appcompat.R;
+import androidx.appcompat.internal.widget.LinearLayoutICS;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;

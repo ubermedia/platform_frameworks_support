@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v8.renderscript;
+package androidx.renderscript;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -40,7 +40,7 @@ import java.util.ArrayList;
  * Currently, all kernels in a ScriptGroup must be from separate
  * Script objects. Attempting to use multiple kernels from the same
  * Script object will result in an
- * {@link android.support.v8.renderscript.RSInvalidStateException}.
+ * {@link androidx.renderscript.RSInvalidStateException}.
  *
  **/
 public class ScriptGroup extends BaseObj {

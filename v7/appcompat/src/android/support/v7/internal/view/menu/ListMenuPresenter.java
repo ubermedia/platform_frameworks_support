@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.view.menu;
+package androidx.appcompat.internal.view.menu;
 
 import android.content.Context;
 import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.v7.appcompat.R;
+import androidx.appcompat.appcompat.R;
 import android.util.SparseArray;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;

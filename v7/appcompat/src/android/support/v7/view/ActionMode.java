@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.view;
+package androidx.appcompat.view;
 
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -218,7 +218,7 @@ public abstract class ActionMode {
 
     /**
      * Callback interface for action modes. Supplied to
-     * {@link android.support.v7.app.ActionBarActivity#startSupportActionMode(Callback)}
+     * {@link androidx.appcompat.app.ActionBarActivity#startSupportActionMode(Callback)}
      * a Callback configures and handles events raised by a user's interaction with an action mode.
      *
      * <p>An action mode's lifecycle is as follows:

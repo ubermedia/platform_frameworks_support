@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.internal.view.menu;
+package androidx.appcompat.internal.view.menu;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -22,10 +22,10 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v7.appcompat.R;
-import android.support.v7.internal.view.ActionBarPolicy;
-import android.support.v4.view.ActionProvider;
-import android.support.v7.internal.view.menu.ActionMenuView.ActionMenuChildView;
+import androidx.appcompat.appcompat.R;
+import androidx.appcompat.internal.view.ActionBarPolicy;
+import androidx.core.view.ActionProvider;
+import androidx.appcompat.internal.view.menu.ActionMenuView.ActionMenuChildView;
 import android.util.SparseBooleanArray;
 import android.view.MenuItem;
 import android.view.SoundEffectConstants;

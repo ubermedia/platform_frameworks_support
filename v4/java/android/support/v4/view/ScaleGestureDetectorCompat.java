@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.view;
+package androidx.core.view;
 
 /**
  * Helper for accessing features in <code>ScaleGestureDetector</code> introduced

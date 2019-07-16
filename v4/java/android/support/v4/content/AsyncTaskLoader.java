@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package android.support.v4.content;
+package androidx.core.content;
 
 import android.content.Context;
 import android.os.Handler;
 import android.os.SystemClock;
-import android.support.v4.util.TimeUtils;
+import androidx.core.util.TimeUtils;
 import android.util.Log;
 
 import java.io.FileDescriptor;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v4.widget;
+package androidx.core.widget;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -22,6 +22,8 @@ import android.net.Uri;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.cursoradapter.widget.CursorAdapter;
 
 /**
  * Static library support version of the framework's {@link android.widget.SimpleCursorAdapter}.

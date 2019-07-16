@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v8.renderscript;
+package androidx.renderscript;
 
 import android.util.Log;
 
@@ -61,11 +61,11 @@ public class ScriptIntrinsic3DLUT extends ScriptIntrinsic {
     }
 
     /**
-     * Sets the {@link android.support.v8.renderscript.Allocation} to be used as
+     * Sets the {@link androidx.renderscript.Allocation} to be used as
      * the lookup table.
      *
      * The lookup table must use the same
-     * {@link android.support.v8.renderscript.Element} as the intrinsic.
+     * {@link androidx.renderscript.Element} as the intrinsic.
      *
      */
 

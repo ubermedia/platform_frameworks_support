@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.media;
+package androidx.mediarouter.media;
 
 import android.content.ComponentName;
 import android.content.Context;
@@ -28,7 +28,7 @@ import android.os.RemoteException;
 import android.os.IBinder.DeathRecipient;
 import android.os.Message;
 import android.os.Messenger;
-import android.support.v7.media.MediaRouter.ControlRequestCallback;
+import androidx.mediarouter.media.MediaRouter.ControlRequestCallback;
 import android.util.Log;
 import android.util.SparseArray;
 
@@ -36,7 +36,7 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 
-import static android.support.v7.media.MediaRouteProviderProtocol.*;
+import static androidx.mediarouter.media.MediaRouteProviderProtocol.*;
 
 /**
  * Maintains a connection to a particular media route provider service.

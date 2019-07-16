@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.media;
+package androidx.mediarouter.media;
 
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -24,7 +24,7 @@ import android.content.IntentFilter;
 import android.content.res.Resources;
 import android.media.AudioManager;
 import android.os.Build;
-import android.support.v7.mediarouter.R;
+import androidx.appcompat.mediarouter.R;
 import android.view.Display;
 
 import java.util.ArrayList;

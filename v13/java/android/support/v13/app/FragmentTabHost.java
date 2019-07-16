@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v13.app;
+package androidx.core.app;
 
 import java.util.ArrayList;
 
@@ -35,7 +35,7 @@ import android.widget.TabHost;
 import android.widget.TabWidget;
 
 /**
- * Version of {@link android.support.v4.app.FragmentTabHost} that can be
+ * Version of {@link androidx.fragment.app.FragmentTabHost} that can be
  * used with the platform {@link android.app.Fragment} APIs.  You will not
  * normally use this, instead using action bar tabs.
  */

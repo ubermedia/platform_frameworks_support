@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package android.support.v7.app;
+package androidx.appcompat.app;
 
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.v4.app.FragmentTransaction;
+import androidx.fragment.app.FragmentTransaction;
 import android.view.View;
 import android.widget.SpinnerAdapter;
 

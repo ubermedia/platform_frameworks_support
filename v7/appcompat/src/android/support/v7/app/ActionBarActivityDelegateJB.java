@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.support.v7.app;
+package androidx.appcompat.app;
 
 class ActionBarActivityDelegateJB extends ActionBarActivityDelegateICS {
 
