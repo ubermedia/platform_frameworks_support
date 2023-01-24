@@ -110,7 +110,7 @@ class TransportMediatorJellybeanMR2
     void windowAttached() {
         mContext.registerReceiver(mMediaButtonReceiver, mReceiverFilter);
         mPendingIntent = PendingIntent.getBroadcast(mContext, 0, mIntent,
-                PendingIntent.FLAG_CANCEL_CURRENT);
+                PendingIntent.FLAG_CANCEL_CURRENT | PendingIntent.FLAG_IMMUTABLE);
         mRemoteControl = new RemoteControlClient(mPendingIntent);
         mRemoteControl.setOnGetPlaybackPositionListener(this);
         mRemoteControl.setPlaybackPositionUpdateListener(this);

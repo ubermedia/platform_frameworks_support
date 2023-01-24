@@ -74,12 +74,12 @@ public class RemotePlaybackClient {
         Intent itemStatusIntent = new Intent(StatusReceiver.ACTION_ITEM_STATUS_CHANGED);
         itemStatusIntent.setPackage(context.getPackageName());
         mItemStatusPendingIntent = PendingIntent.getBroadcast(
-                context, 0, itemStatusIntent, 0);
+                context, 0, itemStatusIntent, PendingIntent.FLAG_IMMUTABLE);
 
         Intent sessionStatusIntent = new Intent(StatusReceiver.ACTION_SESSION_STATUS_CHANGED);
         sessionStatusIntent.setPackage(context.getPackageName());
         mSessionStatusPendingIntent = PendingIntent.getBroadcast(
-                context, 0, sessionStatusIntent, 0);
+                context, 0, sessionStatusIntent, PendingIntent.FLAG_IMMUTABLE);
 
         detectFeatures();
     }
